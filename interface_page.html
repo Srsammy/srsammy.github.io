@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makerspace Builder</title>
+    <link href="VTool.css" rel="stylesheet"/>
+    <link href="MakerspaceWebsiteStyle.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Top bar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="MakerspaceWebsiteLogo.webp" alt="Logo">          <!-- Needs logo URL -->
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="MakerspaceWebsiteHomepage.html">Home</a></li>      <!-- Needs homepage URL -->
+            <li class="nav-item"><a href="UserInterface.html">Build</a></li>    <!-- Needs build subpage URL -->
+            <li class="nav-item"><a href="Modules.html">Modules</a></li><!-- Needs modules subpage URL -->
+            <li class="nav-item"><a href="Learn.html">Learn</a></li>    <!-- Needs Learn subpage URL -->
+            <li class="nav-item"><a href="About.html">About</a></li>    <!-- Needs about subpage URL -->
+        </ul>
+    </nav>
+
+    <div class = "makerspaceImage">
+        <div class = "centered">Module Builder</div>
+        <img src="Prototype_lab.jpg" alt="Makerspace Image">
+    </div>
+    
+    <div class="ModuleList">
+        <br/><br/>
+        <p class = "page-title">Describe something here<br> Something else...</p>
+        <!-- Voltage selector -->
+        <div class="voltage-selector">
+            <label for="voltage">What voltage are you designing this for?</label>
+            <select id="voltage" onchange="updateTotals()">
+                <option value="120">120V</option>
+                <option value="240">240V</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- Subtotal bar -->
+            <div class="SubtotalHeader" id="Subtotal">Totals:
+                <!-- Check aspect ratio to turn off if too small -->
+                 <div class="smallerTotals"> 
+                    <br>
+                    <!-- Smaller totals-->
+                     <!-- Use data-group tag-->
+                    <div>$<span class="total-amount">0</span></div>
+                    <div> <span class="total-wattage">0</span>W</div>
+                    <div> <span class="total-amperage">0</span>A</div>
+                    <div id="short compatibility-warning" class="short compatibility-warning"></div>
+                </div>
+            </div>
+
+            <!-- Container for dynamically generated items -->
+            <div class = "item-list" id="item-list"></div>
+
+            
+        </div>
+        <!-- Container for search and add button -->
+        <div class="search-add-container">
+            <!-- Dropdown for selecting modules -->
+            <div class="dropdown">
+                <input type="text" id="module-search" placeholder="Search for a module..." oninput="filterDropdown()" onfocus="showDropdown()">
+                <div id="dropdown-content" class="dropdown-content">
+                    <!-- Dynamically populated dropdown options -->
+                </div>
+            </div>
+            <!-- Button to add additional modules -->
+            <div class="add-btn" onclick="addSelectedModule()">
+                <img src="https://img.icons8.com/material-outlined/24/plus--v1.png" alt="Add Module">
+            </div>
+        </div>   
+    
+
+        <div class="Results">
+            <br/><br/>
+            <!-- Display for the total cost -->
+            <div class="total">Total Cost: $<span class="total-amount">0</span></div>
+
+            <!-- Display for the total wattage -->
+            <div class="totalwattage">Maxinum Power Draw: <span class="total-wattage">0</span>W</div>
+
+            <!-- Display for the total amperage -->
+            <div class="totalamperage">Maxinum Amperage Draw: <span class="total-amperage">0</span>A</div>
+
+            <!-- Display for the compatibility warning -->
+            <div id="compatibility-warning" class="compatibility-warning"></div>
+        </div>
+    
+    </div>
+
+
+
+    <div class="content"></div>
+
+    <script src="main.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="itemList.js"></script>
+    <script src='SavingInfo.js'></script>
+    <script src="totals.js"></script>
+</body>
+</html>

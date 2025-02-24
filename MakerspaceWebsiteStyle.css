@@ -1,0 +1,126 @@
+/* Makerspace Webpage Style Code*/
+:root{
+    --fontHeader1: "helectiva,sans-serif";
+    
+}
+
+body {
+    background: #C6AC8F;
+    padding: -10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/*Importing Sarala regular font*/
+@font-face {
+    font-family: Sarala;
+    src: url("Sarala/Sarala-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*BEGINING OF NAVBAR STYLING*/
+
+/*Class Navbar Styling*/
+.navbar {
+    background: #8093F1;
+    overflow: hidden;
+    position: static;
+    margin: 0;
+    height: 40px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*class Logo, element img styling*/
+.logo img {
+    height: 80px; 
+    padding: 5px;
+}
+
+/*class navbar, class nav-list styling*/
+.navbar .nav-list {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/*class navbar, class nav-item styling*/
+.navbar .nav-item {
+    margin: 0 15px;
+}
+
+/*class navbar, class nav-item, element a styling*/
+.navbar .nav-item a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.685);
+    padding: 18px 20px;
+    display: block;
+}
+
+/*class navbar, class nav-item, element a, psudo-selector hover styling*/
+.navbar .nav-item a:hover {
+    background-color: #ffffff5b;
+}
+/*END OF NAVBAR STYLING*/
+
+/*class page title font styling*/
+.page-title {
+    font-family: var(--fontHeader1);
+    font-size: 25px;
+    /*background-color: green;*/
+    text-align: center;
+    position: static;
+    margin: 20px;
+
+}
+
+/*class normal text style*/
+.normal-text {
+    font-family: var(--fontHeader1);
+    font-size: 1.5em;
+    background-color: purple;
+    text-align: center;
+    position: static;
+    margin: 20px;
+}
+
+/*class footer text style*/
+.footer-text {
+    font-family: var(--fontHeader1);
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 5%;
+    background-color: #ec0000;
+}
+
+/*footer section style*/
+footer {
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+footer, p{
+    font-family: sarala, helectiva, sans-serif;
+    font-size: x-small;
+    /*color:chartreuse;*/
+    margin: 49%;
+}
