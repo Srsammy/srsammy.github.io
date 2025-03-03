@@ -12,7 +12,6 @@
     <!-- Top bar-->
     <nav class="navbar">
         <div class="logo">
-            <img src="MakerspaceWebsiteLogo.webp" alt="Logo">          <!-- Needs logo URL -->
         </div>
         <ul class="nav-list">
             <li class="nav-item"><a href="MakerspaceWebsiteHomepage.html">Home</a></li>      <!-- Needs homepage URL -->
