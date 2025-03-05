@@ -1,18 +1,18 @@
 Module,Finished,Upfront Cost,Depth (m),Width (m),Area (m^2),Position,Watts,Voltage,Amperage (120v),Amperage (240v),Resource page?,Summary?,Needs computer?,Maintenance (Docs and times),Requirements,Number
-Basic Art,TRUE,695.75,6,3,18,Table or Storage,0,0,0,0,0,0,FALSE,0,Quiet - Water,1
+Basic Art,TRUE,$695.75,6,3,18,Table or Storage,0,0,0,0,0,0,FALSE,0,Quiet - Water,1
 Computer Lab,FALSE,0,0,0,0,Table,0,0,0,0,0,0,TRUE,0,0,2
-Cosmetology,FALSE,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,3
-English Class,FALSE,0,3,3,9,Table or Storage,0,0,0,0,0,0,FALSE,0,Quiet - if Basic Art Module - no extra area is needed,4
-Music,FALSE,550,0,0,0,0,0,0,0,0,0,0,FALSE,0,Quiet,5
+Cosmetology: Hair,TRUE,$230.78,4,3,12,Chair,0,240,0.00,0.00,0,0,FALSE,0,Overlap with Cosmetology: Makeup,3
+English Class,FALSE,$0.00,3,3,9,Table or Storage,0,0,0,0,0,0,FALSE,0,Quiet - if Basic Art Module - no extra area is needed,4
+Music,FALSE,$550.00,0,0,0,0,0,0,0,0,0,0,FALSE,0,Quiet,5
 Restaurant food,FALSE,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,6
 Street Food,FALSE,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,7
-3D Printer,TRUE,220,1,1,1,Table or Shelf,350,360,2.92,1.46,0,0,TRUE,0,0,8
+3D Printer,TRUE,$220.00,1,1,1,Table or Shelf,350,360,2.92,1.46,0,0,TRUE,0,0,8
 Base Package,FALSE,0,0,0,0,0,0,0,0,0,0,0,FALSE,0,0,9
-Bike Repair,TRUE,143.64,3,4,12,Floor,0,0,0,0,0,0,FALSE,0,0,10
-Carpentry,FALSE,225,3,4,12,Table,60,0,0,0.25,0,0,FALSE,0,0,11
-Coding Class,TRUE,0,0,0,0,Table,0,0,0,0,0,0,TRUE,0,0,12
-Data recovery,TRUE,678,0,0,0,Storage,0,0,0,0,0,0,TRUE,0,Electronics Repair,13
-Electronics Repair,FALSE,134,0,0,0,Table,700,120,5.83,2.92,0,0,FALSE,0,0,14
-Metal,FALSE,1277.32,3,7,21,Table,2820,120,23.5,11.75,0,0,FALSE,0,Ventilation & its own room,15
-Plumbing,FALSE,227.43,3,5,15,Floor,0,0,0,0,0,0,FALSE,0,0,16
-Sewing,TRUE,398.78,2,2,4,Table,84,120,0.7,0.35,0,0,FALSE,0,-,17
+Bike Repair,TRUE,$143.64,3,4,12,Floor,0,0,0,0,0,0,FALSE,0,0,10
+Carpentry,FALSE,$225.00,3,4,12,Table,60,0,0,0.25,0,0,FALSE,0,0,11
+Coding Class,TRUE,$0.00,0,0,0,Table,0,0,0,0,0,0,TRUE,0,0,12
+Data recovery,TRUE,$678.00,0,0,0,Storage,0,0,0,0,0,0,TRUE,0,Electronics Repair,13
+Electronics Repair,FALSE,$134.00,0,0,0,Table,700,120,5.83,2.92,0,0,FALSE,0,0,14
+Metal,TRUE,"$1,277.32",3,7,21,Table,2820,120,23.50,11.75,0,0,FALSE,0,Ventilation & its own room,15
+Plumbing,TRUE,$227.43,3,5,15,Floor,0,0,0,0,0,0,FALSE,0,0,16
+Sewing,TRUE,$398.78,2,2,4,Table,84,120,0.70,0.35,0,0,FALSE,0,-,17
