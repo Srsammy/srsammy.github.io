@@ -1,6 +1,6 @@
 Module,Finished,Upfront Cost,Depth (m),Width (m),Area (m^2),Position,Watts,Voltage,Amperage (120v),Amperage (240v),Resource page?,Summary?,Needs computer?,Maintenance (Docs and times),Requirements,Number
 Basic Art,TRUE,695.75,6,3,18,Table or Storage,0,0,0,0,0,0,FALSE,0,Quiet - Water,1
-Computer Lab,FALSE,0.00,0,0,0,Table,0,0,0,0,0,0,TRUE,0,None,2
+Computer Lab,TRUE,"1,039.98",2,2,4,Table,306,120,2.55,1.28,0,0,TRUE,0,None,2
 Cosmetology: Hair,TRUE,230.78,4,3,12,Chair,0,240,0.00,0.00,0,0,FALSE,0,Quiet - if Basic Art Module - no extra area is needed,3
 English Class,FALSE,0.00,3,3,9,Table or Storage,0,0,0,0,0,0,FALSE,0,Quiet,4
 Music,TRUE,166.00,3,7,21,Floor,0,0,0,0,0,0,FALSE,0,#REF!,5
