@@ -1,7 +1,22 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.12"
-  }
+"name": "tailwindcss",
+"version": "4.0.12",
+"description": "c",
+"main": "^c",
+"devDependencies": {},
+"scripts": {
+  "dev": ""
+},
+
+"name": "tailwindcss",
+"version": "4.0.12",
+"description": "c",
+"main": "^c",
+"devDependencies": {},
+"scripts": {
+  "dev": ""
 }
+}
+"@tailwindcss/postcss": "^4.0.12",
+"postcss": "^8.5.3",
+"tailwindcss": "^4.0.12"
