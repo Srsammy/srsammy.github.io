@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makerspace Builder</title>
+    <title>Refugee Works - Home</title>
     <link href="MakerspaceWebsiteStyle.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Top bar-->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="MakerspaceWebsiteLogo.webp" alt="Logo">          <!-- Needs logo URL -->
-        </div>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="MakerspaceWebsiteHomepage.html">Home</a></li>      <!-- Needs homepage URL -->
-            <li class="nav-item"><a href="UserInterface.html">Build</a></li>    <!-- Needs build subpage URL -->
-            <li class="nav-item"><a href="Modules.html">Modules</a></li><!-- Needs modules subpage URL -->
-            <li class="nav-item"><a href="Learn.html">Learn</a></li>    <!-- Needs Learn subpage URL -->
-            <li class="nav-item"><a href="About.html">About</a></li>    <!-- Needs about subpage URL -->
-        </ul>
-    </nav>
-    <p class = "">Hello Bob
-        <br> This is our prototype webpage. The content will be the same
-        <br> but we will improve on the look
+    <!-- Nav bar-->
+    <div id="navbar-container"></div>
+    <script src="navbar.js"></script>
+
+    <h1 class="page-title">Refugee Works</h1>
+    <h2 class="page-title">A Makerspace Design Tool</h2>
+    <p class = "page-title"> <button type="build"><a href="UserInterface.html">Start Your Design</a></button>
+        <br>
+        <button type="learn"><a href="Learn.html">Learn More</a></button>
+        <br>
+        <button type="about"><a href="About.html">Who We Are</a></button>
     </p>
 </body>
