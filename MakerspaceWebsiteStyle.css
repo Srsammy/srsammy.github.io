@@ -128,3 +128,20 @@ footer, p{
    font-size: small;
    
 }
+
+.button-container {
+    position: absolute;
+    width: 25%;
+    height: 35px;
+    background: blue;
+}
+
+
+.linked {
+    position: absolute;
+
+    font-family: sarala, helectiva, sans-serif;
+    font-size: small;
+    color: black; 
+    text-align: center;
+}
