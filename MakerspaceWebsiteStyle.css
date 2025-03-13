@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #C6AC8F;
+    background: white;
     padding: -10px;
 }
 
@@ -26,7 +26,7 @@ body {
 
 /*Class Navbar Styling*/
 .navbar {
-    background: #8093F1;
+    background: grey;
     overflow: hidden;
     position: static;
     margin: 0;
@@ -86,9 +86,8 @@ body {
 
 /*class normal text style*/
 .normal-text {
-    font-family: var(--fontHeader1);
-    font-size: 1.5em;
-    background-color: purple;
+    font-family: Helvetica, sans-serif;
+    font-size: small;
     text-align: center;
     position: static;
     margin: 20px;
@@ -96,7 +95,7 @@ body {
 
 /*class footer text style*/
 .footer-text {
-    font-family: var(--fontHeader1);
+    font-family: Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
     position: absolute;
@@ -130,18 +129,19 @@ footer, p{
 }
 
 .button-container {
-    position: absolute;
-    width: 25%;
-    height: 35px;
-    background: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    background: white;
 }
 
 
 .linked {
-    position: absolute;
-
     font-family: sarala, helectiva, sans-serif;
     font-size: small;
-    color: black; 
     text-align: center;
 }
