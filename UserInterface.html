@@ -67,63 +67,62 @@
             <!-- Design tool section-->
             <div class="design-tool">
 
-
-                <div class="design-tool-A">
-                    <!-- Voltage selector -->
-                    <div class="voltage-container">
-                        <label for="voltage">Selected Voltage:</label>
-                        <select id="voltage" onchange="updateTotals()">
-                            <option value="120">120V</option>
-                            <option value="240">240V</option>
-                        </select>
-                    </div>
-                    <!-- End of voltage selector -->
-                </div>
-
-
-                <div class="design-tool-B">
-                
-                    <!-- Subtotal container -->
-                    <div class="subtotal-container">
-                        <div class="SubtotalHeader" id="Subtotal">
-                            Totals:
-                        </div>
-                            <!-- Check aspect ratio to turn off if too small -->
-                    
-                        <div class="smallerTotals"> 
-                            <br>
-                            <!-- Smaller totals-->
-                            <!-- Use data-group tag-->
-                            <div>$<span class="total-amount">0</span></div>
-                            <div> <span class="total-wattage">0</span>W</div>
-                            <div> <span class="total-amperage">0</span>A</div>
-                            <div id="short compatibility-warning" class="short compatibility-warning"></div>
+                <div class="input-container">
+                    <div class="module-list-container">
                         
+                        <!-- Voltage selector -->
+                        <div class="voltage-container">
+                            <label for="voltage">Selected Voltage:</label>
+                            <select id="voltage" onchange="updateTotals()">
+                                <option value="120">120V</option>
+                                <option value="240">240V</option>
+                            </select>
                         </div>
-                
+                        <!-- End of voltage selector -->
+                    
+                        <!-- Container for search and add button -->
+                        <div class="module-menue-container">
+                            <div class="dropdown">
+                                <input type="text" id="module-search" placeholder="Search for a module..." oninput="filterDropdown()" onfocus="showDropdown()">
+                                <div id="dropdown-content" class="dropdown-content"></div>
+                            </div>
+
+                            <!-- Button to add additional modules -->
+                            <div class="add-btn" onclick="addSelectedModule()">
+                                <img src="https://img.icons8.com/material-outlined/24/plus--v1.png" alt="Add Module">
+                            </div>
+                        </div> 
+
                     </div>
+
+
+                    <div class="design-tool-B">
+                    
+                        <!-- Subtotal container -->
+                        <div class="subtotal-container">
+                            <div class="SubtotalHeader" id="Subtotal">
+                                Totals:
+                            </div>
+                                <!-- Check aspect ratio to turn off if too small -->
+                        
+                            <div class="smallerTotals"> 
+                                <br>
+                                <!-- Smaller totals-->
+                                <!-- Use data-group tag-->
+                                <div>$<span class="total-amount">0</span></div>
+                                <div> <span class="total-wattage">0</span>W</div>
+                                <div> <span class="total-amperage">0</span>A</div>
+                                <div id="short compatibility-warning" class="short compatibility-warning"></div>
+                            
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <!-- End of subtotal container -->
                 </div>
-                <!-- End of subtotal container -->
 
                 <!-- Container for dynamically generated items -->
-                <div class="design-tool-C" id="item-list">
-
-                    <!-- Container for search and add button -->
-                    <div class="search-add-container">
-                        <!-- Dropdown for selecting modules -->
-                        <div class="dropdown">
-                            <input type="text" id="module-search" placeholder="Search for a module..." oninput="filterDropdown()" onfocus="showDropdown()">
-                            <div id="dropdown-content" class="dropdown-content">
-                                <!-- Dynamically populated dropdown options -->
-                            </div>
-                        </div>
-                        <!-- Button to add additional modules -->
-                        <div class="add-btn" onclick="addSelectedModule()">
-                            <img src="https://img.icons8.com/material-outlined/24/plus--v1.png" alt="Add Module">
-                        </div>
-                    </div>   
-        
-
+                <div class="totals" id="item-list">
                     <div class="Results">
                         <br/><br/>
                         <!-- Display for the total cost -->
