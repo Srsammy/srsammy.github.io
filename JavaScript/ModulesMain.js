@@ -15,11 +15,11 @@ async function loadTSV() {
                 module: columns[0],
                 what: columns[16],
                 HowToUse: columns[17],
-                Make: columns[18]
+                make: columns[18]
             });
         }
     });
-    populateList(); // Populate the dropdown with items
+    populateList(); // Populate the url items
     loadInformation(); // Loads the parahraphs
 }
 
@@ -50,5 +50,32 @@ function populateList() {
 }
 
 function loadInformation() {
-    
+    // Get the query string from the URL
+    const queryString = window.location.search;
+
+    // Extract the value after the '?' (e.g., "123" from "Modules.html?123")
+    const moduleNumber = queryString.slice(1); // Remove the '?'
+
+    // Log the extracted module number for debugging
+    console.log('Extracted module number:', moduleNumber);
+
+    // Find the corresponding module in the items array
+    let module = items.find(item => item.number.trim() === moduleNumber.trim());
+
+    if (!module || parseInt(moduleNumber) > items.length) {
+        console.warn('Module not found or invalid module number. Defaulting to module 1.');
+        module = items[0]; // Default to the first module
+    }
+
+    // If the module is found, update the HTML element with id="name"
+    if (module) {
+        document.getElementById('name').innerHTML = module.module;
+        document.getElementById('what').innerHTML = module.what;
+        document.getElementById('HowToUse').innerHTML = module.HowToUse;
+        document.getElementById('make').innerHTML = module.make;
+        
+    } else {
+        console.error('Module not found for number:', moduleNumber);
+        document.getElementById('name').innerHTML = 'Module not found';
+    }
 }
