@@ -5,9 +5,10 @@ body {
     margin: 0px;
 }
 
-/*BEGINING OF NAVBAR STYLING*/
 
-/*Class Navbar Styling*/
+
+
+/*BEGINING OF NAVBAR STYLING*/
 .navbar {
     position: static;
     display: flex;
@@ -22,67 +23,89 @@ body {
     background: #333;
 }
 
-/*class Logo, element img styling*/
 .logo {
     height: 70px;
-    margin-bottom: -4px; 
+    vertical-align: middle;
 }
 
 .logo-anchor {
     padding: 0px;
     border:2px solid #333;
-}
+    margin-bottom: 4px;
+}    
+
 .logo-anchor:hover{
     border-color:lightblue;
 }
 
-/*class navbar, class nav-list styling*/
-.navbar .nav-list {
+.nav-list {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-grow: 1;
 }
 
-/*class navbar, class nav-item styling*/
-.navbar .nav-item {
-    margin: 0 15px;
+.nav-item {
+    margin: 10px;
 }
 
-/*class navbar, class nav-item, element a styling*/
-.navbar .nav-item a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.685);
-    padding: 18px 20px;
+.nav-item a {
     display: block;
+    padding: 18px 20px;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+
 }
 
-/*class navbar, class nav-item, element a, psudo-selector hover styling*/
-.navbar .nav-item a:hover {
-    background-color: #ffffff5b;
+.nav-item a:hover {
+    background-color: lightblue;
+    color: black;
 }
 /*END OF NAVBAR STYLING*/
 
-/*class page title font styling*/
+
+
+
+/*BEGINING OF CONTENT STYLING*/
+.container{
+    display: block;
+    flex-direction: column;
+    margin: 15px;
+    margin-top: 50px;
+    align-items: center;
+}
+
 .page-title {
+    position: static;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
     font-family: Helvetica, sans-serif;
     font-size: 25px;
-    /*background-color: green;*/
-    text-align: center;
-    position: static;
-    margin: 20px;
+    background-color: lightblue;
 
+}
+
+.normal-text{
+    margin-top:50px;
+    margin-bottom: 50px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+    text-align: left;
+    color: black;
+    
 }
 
 .button-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    vertical-align: middle;
     height: auto;
-    padding: 5px;
-    margin: 5px;
+    width: fit-content;
+    padding: 5px 30px;
+    margin: 0 auto;
     background: lightblue;
 }
 
@@ -97,15 +120,61 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 15px;
 }
+/*END OF CONTENT STYLING*/
 
-/*footer section style*/
+
+
+
+/*FOOTER STYLE*/
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
     background-color: #333;
     color: white;
     width: 100%;
-    height: 50px;
+    height: auto;
+    padding: 10px;
+}
+
+.footer-A {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    height: auto;
     text-align: center;
 }
+
+.footer-text{
+    color: lightgrey;
+    font-family: Helvetica, sans-serif;
+    font-size: 7pt;
+    padding: 5px;
+    width: 30%;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.footer-B{
+    color: lightgrey;
+    font-family: Helvetica, sans-serif;
+    font-size: 6pt;
+    font-style: italic;
+    padding: 0px;
+    width:fit-content;
+    margin: 5px auto;
+    text-align: center;
+
+}
+/*END FOOTER STYLE*/
+
+
+
 
 /* Container for each item and its details */
 .item-container {
