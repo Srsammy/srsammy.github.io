@@ -1,6 +1,7 @@
 /* Makerspace Webpage Style Code*/
 body {
     background: white;
+    opacity:1;
     padding: 0px;
     margin: 0px;
 }
@@ -69,16 +70,27 @@ body {
 
 /*BEGINING OF CONTENT STYLING*/
 .container{
+    position: static;
     display: block;
-    flex-direction: column;
-    margin: 15px;
-    margin-top: 50px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
     align-items: center;
+    font-family: Helvetica, sans-serif;
+    border: 2px solid gold;
+}
+
+.text-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0px;
 }
 
 .page-title {
     position: static;
-    margin: 0px;
+    margin: 50px 15px;
     padding: 10px;
     text-align: center;
     font-family: Helvetica, sans-serif;
@@ -87,13 +99,39 @@ body {
 
 }
 
+.design-tool-image{
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    border: 2px solid tomato;
+}
+
+.background-image{
+    width: auto;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
 .normal-text{
-    margin-top:50px;
-    margin-bottom: 50px;
+    margin: 0px;
+    padding: 10px;
     font-family: Helvetica, sans-serif;
     font-size: 12pt;
     text-align: left;
     color: black;
+    background-color: white;
     
 }
 
@@ -119,6 +157,57 @@ body {
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     font-size: 15px;
+}
+
+.design-tool{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    height:auto;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: lightblue;
+    border: 2px solid tomato;
+}
+
+.design-tool-A{
+    border: 2px solid blue;
+}
+
+.design-tool-B{
+    border: 2px solid yellow;
+}
+
+.design-tool-C{
+    border: 2px solid pink;
+}
+
+
+.voltage-container{
+    display: block;
+    height: auto;
+    width: fit-content;
+    padding: 5px 30px;
+    margin: 0 0;
+    font-size: 10pt;
+    border: 2px solid grey;
+}
+
+.subtotal-container{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 150px;
+    padding: 5px 30px;
+    margin: auto 0;
+    font-size: 10pt;
+    border: 2px solid grey;
 }
 /*END OF CONTENT STYLING*/
 
