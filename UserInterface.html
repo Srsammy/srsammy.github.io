@@ -73,7 +73,7 @@
                         <!-- Voltage selector -->
                         <div class="voltage-container">
                             <label for="voltage">Selected Voltage:</label>
-                            <select id="voltage" onchange="updateTotals()">
+                            <select class="dropdown" id="voltage" onchange="updateTotals()">
                                 <option value="120">120V</option>
                                 <option value="240">240V</option>
                             </select>
@@ -82,11 +82,7 @@
                     
                         <!-- Container for search and add button -->
                         <div class="module-menue-container">
-                            <div class="dropdown">
-                                <input type="text" id="module-search" placeholder="Search for a module..." oninput="filterDropdown()" onfocus="showDropdown()">
-                                <div id="dropdown-content" class="dropdown-content"></div>
-                            </div>
-
+                                <input class="dropdown" type="text" id="module-search" placeholder="Search for a module..." oninput="filterDropdown()" onfocus="showDropdown()">
                             <!-- Button to add additional modules -->
                             <div class="add-btn" onclick="addSelectedModule()">
                                 <img src="https://img.icons8.com/material-outlined/24/plus--v1.png" alt="Add Module">
@@ -94,9 +90,6 @@
                         </div> 
 
                     </div>
-
-
-                    <div class="design-tool-B">
                     
                         <!-- Subtotal container -->
                         <div class="subtotal-container">
@@ -104,39 +97,32 @@
                                 Totals:
                             </div>
                                 <!-- Check aspect ratio to turn off if too small -->
-                        
-                            <div class="smallerTotals"> 
                                 <br>
                                 <!-- Smaller totals-->
                                 <!-- Use data-group tag-->
-                                <div>$<span class="total-amount">0</span></div>
-                                <div> <span class="total-wattage">0</span>W</div>
-                                <div> <span class="total-amperage">0</span>A</div>
+                                <div>Cost: $<span class="total-amount">0</span></div>
+                                <div>Power: <span class="total-wattage">0</span>W</div>
+                                <div>Required Amperage: <span class="total-amperage">0</span>A</div>
                                 <div id="short compatibility-warning" class="short compatibility-warning"></div>
-                            
-                            </div>
-                    
                         </div>
-                    </div>
                     <!-- End of subtotal container -->
                 </div>
 
                 <!-- Container for dynamically generated items -->
-                <div class="totals" id="item-list">
-                    <div class="Results">
-                        <br/><br/>
-                        <!-- Display for the total cost -->
-                        <div class="total">Total Cost: $<span class="total-amount">0</span></div>
+                <div class="totals-container" id="item-list">
+                        <div>
+                            Total Cost: $<span class="total-amount">0</span>
+                        </div>
 
-                        <!-- Display for the total wattage -->
-                        <div class="totalwattage">Maxinum Power Draw: <span class="total-wattage">0</span>W</div>
-
-                        <!-- Display for the total amperage -->
-                        <div class="totalamperage">Maxinum Amperage Draw: <span class="total-amperage">0</span>A</div>
-
-                        <!-- Display for the compatibility warning -->
-                        <div id="compatibility-warning" class="compatibility-warning"></div>
-                    </div>
+                        <div>
+                            Maxinum Power Draw: <span class="total-wattage">0</span>W</div>
+                        <div>
+                            Maxinum Amperage Draw: <span class="total-amperage">0</span>A
+                        </div>
+                        
+                        <div id="compatibility-warning" class="compatibility-warning">
+                        
+                        </div>
                 </div>
             </div>
         </div>

@@ -77,7 +77,6 @@ body {
     margin-top: 0px;
     align-items: center;
     font-family: Helvetica, sans-serif;
-    border: 2px solid gold;
 }
 
 .text-container {
@@ -114,7 +113,6 @@ body {
     text-align: center;
     font-family: Helvetica, sans-serif;
     font-size: 20px;
-    border: 2px solid tomato;
 }
 
 .background-image{
@@ -163,9 +161,8 @@ body {
     display: block;
     height:auto;
     margin: 30px auto;
-    padding: 10px;
+    padding: 0px 0px;
     background-color: lightblue;
-    border: 2px solid tomato;
 }
 
 .input-container{
@@ -174,11 +171,10 @@ body {
     align-items: start;
     justify-content: space-between;
     height: auto;
-    width: 100%;
-    padding: 0px 0px;
-    margin: 0 0;
+    width: auto;
+    padding: 0px;
+    margin: 0px 0px 10px 10px;
     font-size: 10pt;
-    border: 2px solid purple;
 }
 
 .module-list-container{
@@ -189,20 +185,19 @@ body {
     height: auto;
     width: 100%;
     padding: 0px 0px;
-    border: 2px solid blue;
 }
 
-.design-tool-B{
-    border: 2px solid yellow;
-}
-
-.totals{
+.totals-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 5px;
     height: auto;
-    border: 2px solid pink;
+    color: white;
+    background-color: #333;
 }
 
 
@@ -215,6 +210,26 @@ body {
     font-size: 10pt;
 }
 
+.dropdown{
+    display: inline-block;
+    position: static;
+    height: auto;
+    width: fit-content;
+    padding: 5px 0px;
+    margin: 0 0;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: grey;
+}
+
+.dropdown::placeholder{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
 .module-menue-container{
     display:flex;
     flex-direction: row;
@@ -224,7 +239,6 @@ body {
     width: 100%;
     padding: 10px 0px;
     margin: 0 0;
-    border: 2px solid grey;
 }
 
 .subtotal-container{
@@ -233,16 +247,24 @@ body {
     right: 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
     height: 200px;
-    width: 150px;
-    padding: 5px 30px;
+    width: fit-content;
+    padding: 5px 10px;
     margin: auto 0;
     font-size: 10pt;
     color: white;
     background-color: #333;
-    border: 2px solid grey;
+}
+
+.SubtotalHeader{
+    display: block;
+    height: auto;
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    font-size:12pt;
 }
 /*END OF CONTENT STYLING*/
 
@@ -421,18 +443,7 @@ body {
 .voltage-selector {
     margin-bottom: 20px;
 }
-/* Styling for the total wattage display */
-.total-wattage {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-/* Styling for the total amperage display */
-.total-amperage {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    /*font-weight: bold;*/
-}
-/* Styling for the compatibility warning */
+
 .compatibility-warning {
     margin-top: 10px;
     font-size: 1rem;
@@ -446,24 +457,6 @@ body {
     margin: 0px;
 }
 
-.SubtotalHeader {
-    padding-top: 10px;
-    font-family: var(--fontHeader1);
-    font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.308);
-    position: sticky;
-    text-align: center;
-    border-left: 1px solid #ddd;
-    top: 40%; 
-    right: 0px;
-    margin: 0px;
-    z-index: 100;
-    height: 160px;
-    width: 20%;
-    margin-top: 0;
-    margin-bottom: 15px;
-    float: right;
-}
 .item-list {
     margin: 0px;
     width: 70%;
