@@ -82,19 +82,19 @@
                         <!-- End of voltage selector -->
                     
                                 <!-- Container for search and add button -->
-        <div class="search-add-container">
-            <!-- Dropdown for selecting modules -->
-            <div class="dropdown">
-                <input type="text" id="module-search" placeholder="Search for a module..." oninput="filterDropdown()" onfocus="showDropdown()">
-                <div id="dropdown-content" class="dropdown-content">
-                    <!-- Dynamically populated dropdown options -->
-                </div>
-            </div>
-            <!-- Button to add additional modules -->
-            <div class="add-btn" onclick="addSelectedModule()">
-                <img src="https://img.icons8.com/material-outlined/24/plus--v1.png" alt="Add Module">
-            </div>
-        </div>
+                    <div class="search-add-container">
+                        <!-- Dropdown for selecting modules -->
+                        <div class="dropdown">
+                            <input type="text" id="module-search" placeholder="Search for a module..." oninput="filterDropdown()" onfocus="showDropdown()">
+                            <div id="dropdown-content" class="dropdown-content">
+                                <!-- Dynamically populated dropdown options -->
+                            </div>
+                        </div>
+                        <!-- Button to add additional modules -->
+                        <div class="add-btn" onclick="addSelectedModule()">
+                            <img src="https://img.icons8.com/material-outlined/24/plus--v1.png" alt="Add Module">
+                        </div>
+                    </div>
 
                     </div>
                     
@@ -116,20 +116,22 @@
                 </div>
 
                 <!-- Container for dynamically generated items -->
-                <div class="item-list" id="item-list">
-                        <div>
-                            Total Cost: $<span class="total-amount">0</span>
-                        </div>
+                <div class = "item-list" id="item-list"></div>
 
-                        <div>
-                            Maxinum Power Draw: <span class="total-wattage">0</span>W</div>
-                        <div>
-                            Maxinum Amperage Draw: <span class="total-amperage">0</span>A
-                        </div>
-                        
-                        <div id="compatibility-warning" class="compatibility-warning">
-                        
-                        </div>
+
+                <div class="Results">
+                    <br/><br/>
+                    <!-- Display for the total cost -->
+                    <div class="total">Total Cost: $<span class="total-amount">0</span></div>
+        
+                    <!-- Display for the total wattage -->
+                    <div class="totalwattage">Maxinum Power Draw: <span class="total-wattage">0</span>W</div>
+        
+                    <!-- Display for the total amperage -->
+                    <div class="totalamperage">Maxinum Amperage Draw: <span class="total-amperage">0</span>A</div>
+        
+                    <!-- Display for the compatibility warning -->
+                    <div id="compatibility-warning" class="compatibility-warning"></div>
                 </div>
             </div>
         </div>
