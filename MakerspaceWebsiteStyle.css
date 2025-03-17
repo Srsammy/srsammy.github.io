@@ -321,7 +321,25 @@ body {
 /*END FOOTER STYLE*/
 
 
-
+/*Start Modules style*/
+.sideBar {
+    padding-top: 10px;
+    font-family: var(--fontHeader1);
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.308);
+    position: sticky;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    top: 40%; 
+    right: 0px;
+    margin: 0px;
+    z-index: 100;
+    width: 20%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    float: right;
+}
+/*End Modules style*/
 
 /* Container for each item and its details */
 .item-container {
