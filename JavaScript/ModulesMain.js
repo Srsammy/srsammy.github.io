@@ -12,10 +12,7 @@ async function loadTSV() {
             // Map columns to an object with meaningful properties
             items.push({
                 number: columns[12],
-                module: columns[0],
-                what: columns[16],
-                HowToUse: columns[17],
-                make: columns[18]
+                module: columns[0]
             });
         }
     });
@@ -29,6 +26,8 @@ loadTSV();
 function populateList() {
     const moduleListContainer = document.getElementById('Links');
 
+    if (!moduleListContainer) return; // Ensure the container exists
+
     // Clear any existing content in the container
     moduleListContainer.innerHTML = '';
 
@@ -36,7 +35,8 @@ function populateList() {
     items.forEach(item => {
         console.log('Parsed Items:');
         // Generate the URL by replacing spaces with underscores and adding .html
-        const moduleURL = `Modules.html?${item.number}`; // Create the URL
+        const moduleName = item.module.replace(/\s+/g, '_'); // Replace spaces with underscores
+        const moduleURL = `modules/${moduleName}.html`; // Create the URL
 
         // Create an anchor element for the module
         const moduleLink = document.createElement('a');
