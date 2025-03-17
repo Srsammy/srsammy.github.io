@@ -20,7 +20,7 @@ async function loadTSV() {
         }
     });
     populateList(); // Populate the url items
-    loadInformation(); // Loads the parahraphs
+    //loadInformation(); // Loads the parahraphs
 }
 
 // Load the TSV
