@@ -1,15 +1,28 @@
 
+
+@font-face {
+    font-family: Alegreya;
+    src: url(/Fonts/Alegreya/static/Alegreya-Regular.ttf);
+}
 @font-face {
     font-family: Bellefair;
     src: url(/Fonts/Bellefair-Regular.ttf);
 }
 @font-face {
-    font-family: Sarala;
-    src: url(/Fonts/Sarala-Regular.ttf);
+    font-family: EB_Garamond;
+    src: url(/Fonts/EB_Garamond/static/EBGaramond-Regular.ttf);
 }
 @font-face {
-    font-family: Sarala-Bold;
-    src: url(/Fonts/Sarala-Bold.ttf);
+    font-family: Libre_Baskerville;
+    src: url(/Fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+@font-face {
+    font-family: Quattrocento;
+    src: url(/Fonts/Quattrocento/Quattrocento-Regular.ttf);
+}
+@font-face {
+    font-family: Sarala;
+    src: url(/Fonts/Sarala/Sarala-Regular.ttf);
 }
 /* Makerspace Webpage Style Code*/
 body {
@@ -17,7 +30,7 @@ body {
     opacity:1;
     padding: 0px;
     margin: 0px;
-    font-family: Sarala, Helvetica, sans-serif;
+    font-family: Quattrocento, Helvetica, sans-serif;
 }
 
 
@@ -44,9 +57,10 @@ body {
 }
 
 .logo-anchor {
+    height: 70px;
     padding: 0px;
     border:2px solid #333;
-    margin-bottom: 4px;
+    margin: 0px;
 }    
 
 .logo-anchor:hover{
@@ -146,6 +160,7 @@ body {
     width: 75%;
     margin: 0px auto;
     padding: 10px;
+    font-family: EB_Garamond, Helvetica, sans-serif;
     font-size: 12pt;
     text-align: left;
     color: black;
@@ -156,6 +171,7 @@ body {
     width: 75%;
     margin: 0px auto;
     padding: 10px;
+    font-family: EB_Garamond, Helvetica, sans-serif;
     font-size: 12pt;
     text-align: center;
     color: black;
