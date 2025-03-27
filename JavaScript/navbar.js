@@ -1,4 +1,4 @@
-fetch('navbar.html')
+fetch('/Public/navbar.html') // Fetch the navbar HTML file
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar-container').innerHTML = data;

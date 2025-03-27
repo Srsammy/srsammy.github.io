@@ -1,4 +1,4 @@
-fetch('footer.html')
+fetch('/Public/footer.html') // Fetch the navbar HTML file
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer-container').innerHTML = data;
