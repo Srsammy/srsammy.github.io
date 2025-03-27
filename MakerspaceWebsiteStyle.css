@@ -19,7 +19,7 @@ body {
     overflow: hidden;
     margin: 0;
     height: auto; 
-    width: 100%;
+    width: auto;
     padding: 5px;
     background: #333;
 }
@@ -73,11 +73,14 @@ body {
 .container{
     position: static;
     display: block;
+    width:100%;
+    height: auto;
     margin: 20px 0;
     padding: 0px;
     margin-top: 0px;
     align-items: center;
     font-family: Helvetica, sans-serif;
+    
 }
 .text-container {
     position: static;
@@ -192,7 +195,7 @@ body {
     height: auto;
     width: auto;
     padding: 0px;
-    margin: 0px 0px 10px 10px;
+    margin: 0px 0px 0px 10px;
     font-size: 10pt;
 }
 .module-list-container{
@@ -229,16 +232,17 @@ body {
     position: static;
     height: auto;
     width: fit-content;
-    padding: 5px 0px;
+    padding: 10px;
     margin: 0 0;
     font-size: 10pt;
     border: none;
-    border-radius: 5px;
+    border-radius: 0;
     color: white;
     background-color: #333;
 }
 .dropdown::placeholder{
     color: white;
+    background-color: #333;
     font-family: Helvetica, sans-serif;
     font-size: 10pt;
 }
@@ -251,6 +255,48 @@ body {
     width: 100%;
     padding: 10px 0px;
     margin: 0 0;
+}
+
+/* Styling for the dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: #333;
+    min-width: 160px;
+    max-height: 150px; /* Adjust based on your design */
+    overflow-y: auto; /* Enable scrolling */
+    box-shadow: 0px 8px 16px #333;
+    z-index: 1;
+    bottom: 100%; /* Position dropdown above the search bar */
+}
+.dropdown-content input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.dropdown-content div {
+    padding: 5px; /* Reduced padding */
+    cursor: pointer;
+}
+.dropdown-content div:hover {
+    background-color: grey;
+}
+.show {
+    display: block;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 0;
 }
 .subtotal-container{
     position: sticky;
@@ -281,10 +327,10 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    width: 700px;
+    width: auto;
     height:auto;
     margin: 0;
-    padding: 15px 0;
+    padding: 15px 10px;
     font-family: Helvetica, sans-serif;
     font-size: 14pt;
     color: white;
@@ -332,7 +378,7 @@ body {
     justify-content:start;
     background-color: #333;
     color: white;
-    width: 100%;
+    width: auto;
     margin: 0 0 0 auto;
     height: auto;
     padding: 10px;
@@ -440,50 +486,6 @@ body {
     width: 24px;
     height: 24px;
 }
-/* Styling for the dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    max-height: 150px; /* Adjust based on your design */
-    overflow-y: auto; /* Enable scrolling */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    bottom: 100%; /* Position dropdown above the search bar */
-}
-.dropdown-content input {
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-}
-.dropdown-content div {
-    padding: 5px; /* Reduced padding */
-    cursor: pointer;
-}
-.dropdown-content div:hover {
-    background-color: #ddd;
-}
-.show {
-    display: block;
-}
-
-.dropdown-content::-webkit-scrollbar {
-    width: 8px;
-}
-
-.dropdown-content::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-.dropdown-content::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
 
 /*.dropdown-content::-webkit-scrollbar-thumb:hover {
     background: #555;
@@ -496,6 +498,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-top: 20px; /* Move below the modules list */
+    background-color: #333;
 }
 /* Styling for the quantity input */
 .item-quantity {
