@@ -116,7 +116,7 @@ body {
     padding: 10px;
     text-align: center;
     font-family: Alumni_Sans_Pinstripe, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 25pt;
     border-radius: 15px;
     color: white;
     background-color: #333;
@@ -193,13 +193,14 @@ body {
     margin: 10px;
     padding: 10px 30px;
     background-color: lightblue;
-    color: black;
+    color: #333;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     border-radius:10px;
 }
 .button-container a:hover {
-    background-color: #888;
+    background-color: #333;
+    color: lightblue;
 }
 /* End Of General Page Content */
 
@@ -437,46 +438,63 @@ body {
 /*FOOTER STYLE*/
 .footer {
     position: static;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:start;
+    bottom: 0px;
     background-color: #333;
-    color: white;
+    color: #888;
+    height:auto;
     width: auto;
     margin: 0 0 0 auto;
     height: auto;
-    padding: 10px;
+    padding: 0px;
+    font-size: 8pt;
 }
 .footer-A {
     display: flex;
     flex-direction: row;
     align-items: start;
-    justify-content: space-around;
-    background-color: #333;
-    color: white;
-    width: 100%;
+    justify-content: space-between;
+    width: auto;
     height: auto;
-    text-align: center;
+    margin: 0px 30px;
 }
 .footer-text{
-    color: lightgrey;
-    font-size: 7pt;
+    margin: 0px;
     padding: 5px;
-    width: 30%;
-    margin-top: 0px;
+    width: fit-content;
     text-align: left;
 }
+.footer-info-left{
+    width: fit-content;
+    height: auto;
+    text-align: left;
+    margin: 0px auto 0px 0px;
+    border: 2px solid tomato;
+}
+.footer-info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    width: fit-content;
+    height: auto;
+    margin: 0px 0px 0px auto;
+    border: 2px solid tomato;
+}
+.footer-info-right a{
+    color: #888;
+    text-decoration: none;
+    font-size: 8pt;
+}
+.footer-info-right a:hover{
+    color: lightblue;
+    text-decoration: none;
+    font-size: 8pt;
+}
 .footer-B{
-    color: lightgrey;
-    font-size: 6pt;
-    font-style: italic;
     padding: 0px;
     width:fit-content;
-    margin: 5px auto;
+    margin: 10px auto;
     text-align: center;
-
 }
 /*END FOOTER STYLE*/
 
