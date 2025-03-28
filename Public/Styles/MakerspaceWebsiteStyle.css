@@ -1,42 +1,31 @@
+/* REFUGEE WORKS HTML STYLE SHEET */
 
+/* Imported font families */
+@font-face {
+    font-family: Alumni_Sans_Pinstripe;
+    src: url(/Public/Styles/Fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
+}
+@font-face {
+    font-family: Nunito;
+    src: url(/Public/Styles/Fonts/Nunito/static/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: Nunito-Italic;
+    src: url(/Public/Styles/Fonts/Nunito/static/Nunito-Italic.ttf);
+}
+/* End Of Imported Font Families */
 
-@font-face {
-    font-family: Alegreya;
-    src: url(/Fonts/Alegreya/static/Alegreya-Regular.ttf);
-}
-@font-face {
-    font-family: Bellefair;
-    src: url(/Fonts/Bellefair-Regular.ttf);
-}
-@font-face {
-    font-family: EB_Garamond;
-    src: url(/Fonts/EB_Garamond/static/EBGaramond-Regular.ttf);
-}
-@font-face {
-    font-family: Libre_Baskerville;
-    src: url(/Fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
-}
-@font-face {
-    font-family: Quattrocento;
-    src: url(/Fonts/Quattrocento/Quattrocento-Regular.ttf);
-}
-@font-face {
-    font-family: Sarala;
-    src: url(/Fonts/Sarala/Sarala-Regular.ttf);
-}
-/* Makerspace Webpage Style Code*/
+/* Default Body Style */
 body {
     background: white;
-    opacity:1;
+    opacity: 100%;
     padding: 0px;
     margin: 0px;
-    font-family: Quattrocento, Helvetica, sans-serif;
+    font-family: Nunito, Helvetica, sans-serif;
 }
+/* End Of Default Body Style */
 
-
-
-
-/*BEGINING OF NAVBAR STYLING*/
+/*BEGINNING OF NAVBAR STYLING*/
 .navbar {
     position: static;
     display: flex;
@@ -50,34 +39,29 @@ body {
     padding: 5px;
     background: #333;
 }
-
 .logo {
     height: 70px;
     vertical-align: middle;
+    border-radius: 5px;
 }
-
 .logo-anchor {
     height: 70px;
-    padding: 0px;
+    padding: 3px;
     border:2px solid #333;
-    margin: 0px;
 }    
-
 .logo-anchor:hover{
     border-color:lightblue;
+    border-radius: 10px;
 }
-
 .nav-list {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     flex-grow: 1;
 }
-
 .nav-item {
     margin: 10px;
 }
-
 .nav-item a {
     display: block;
     padding: 18px 20px;
@@ -85,18 +69,16 @@ body {
     color: white;
 
 }
-
 .nav-item a:hover {
     background-color: lightblue;
     color: black;
+    border-radius: 10px;
     background-color: #888;
 }
 /*END OF NAVBAR STYLING*/
 
-
-
-
-/*BEGINING OF CONTENT STYLING*/
+/*BEGINNING OF CONTENT STYLING*/
+/* General Page Content */
 .container{
     position: static;
     display: block;
@@ -117,23 +99,111 @@ body {
 }
 .page-title {
     position: static;
-    margin: 50px 15px;
+    margin: 50px 30px;
     padding: 10px;
     text-align: center;
-    font-size: 25px;
+    font-family: Alumni_Sans_Pinstripe, Helvetica, sans-serif;
+    font-size: 50pt;
+    border-radius: 20px;
     background-color: lightblue;
 
 }
 .subtitle {
     position: static;
     height: auto;
-    width: fit-content;
-    margin: 10px auto;
+    width: auto;
+    margin: 10px 30px;
     padding: 10px;
     text-align: center;
-    font-size: 20px;
-    background-color: lightblue;
+    font-family: Alumni_Sans_Pinstripe, Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 15px;
+    color: white;
+    background-color: #333;
 }
+.quote-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    position: static;
+    height: auto;
+    width: auto;
+    margin: 20px 30px;
+    padding: 0;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    background-color: #333;
+}
+.quote-text{
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 10pt;
+}
+.quote-author{
+    position: static;
+    height: auto;
+    width: max-content;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    text-align: right;
+    font-family: Alumni_Sans_Pinstripe, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+.normal-text{
+    width: auto;
+    margin: 30px;
+    padding: 10px;
+    font-size: 12pt;
+    text-align: left;
+    color: black;
+    background-color: white;
+    
+}
+.centered-text{
+    width: 75%;
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 12pt;
+    text-align: center;
+    color: black;
+    background-color: white;
+    
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    padding: 5px 30px;
+    margin: 15px auto;
+    border-radius: 10px;
+    background: none;
+}
+.button-container a {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: lightblue;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius:10px;
+}
+.button-container a:hover {
+    background-color: #888;
+}
+/* End Of General Page Content */
+
+/* Design Tool Page Content */
 .design-tool-image{
     position: fixed;
     top:0px;
@@ -154,60 +224,16 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    opacity: 0;
-}
-.normal-text{
-    width: 75%;
-    margin: 0px auto;
-    padding: 10px;
-    font-family: EB_Garamond, Helvetica, sans-serif;
-    font-size: 12pt;
-    text-align: left;
-    color: black;
-    background-color: white;
-    
-}
-.centered-text{
-    width: 75%;
-    margin: 0px auto;
-    padding: 10px;
-    font-family: EB_Garamond, Helvetica, sans-serif;
-    font-size: 12pt;
-    text-align: center;
-    color: black;
-    background-color: white;
-    
-}
-.button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    width: fit-content;
-    padding: 5px 30px;
-    margin: 15px auto;
-    background: lightblue;
-}
-.button-container a {
-    width: auto;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
-.button-container a:hover {
-    background-color: #888;
+    opacity: 0%;
 }
 .design-tool{
     display: block;
     height:auto;
-    margin: 30px auto;
-    padding: 0px 0px;
+    margin: 30px 30px;
+    padding: 10px;
     background-color: lightblue;
+    border-radius: 5px;
+
 }
 .input-container{
     display: flex;
@@ -219,6 +245,7 @@ body {
     padding: 0px;
     margin: 0px 0px 0px 10px;
     font-size: 10pt;
+
 }
 .module-list-container{
     display: flex;
@@ -227,7 +254,7 @@ body {
     justify-content: space-between;
     height: auto;
     width: 100%;
-    padding: 0px 0px;
+    padding: 0px;
 }
 .totals-container{
     display: flex;
@@ -260,6 +287,7 @@ body {
     border-radius: 0;
     color: white;
     background-color: #333;
+    border-radius: 5px;
 }
 .dropdown::placeholder{
     color: white;
@@ -274,21 +302,29 @@ body {
     height: auto;
     width: 100%;
     padding: 10px 0px;
-    margin: 0 0;
+    margin: 0;
 }
-
-/* Styling for the dropdown */
+.search-add-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px; /* Move below the modules list */
+    background-color: #333;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
 .dropdown-content {
     display: none;
     position: absolute;
     color: white;
     background-color: #333;
     min-width: 160px;
-    max-height: 150px; /* Adjust based on your design */
-    overflow-y: auto; /* Enable scrolling */
+    max-height: 150px;
+    overflow-y: auto;
     box-shadow: 0px 8px 16px #333;
     z-index: 1;
-    bottom: 100%; /* Position dropdown above the search bar */
+    bottom: 100%;
+    border-radius: 5px;
 }
 .dropdown-content input {
     width: 100%;
@@ -305,15 +341,12 @@ body {
 .show {
     display: block;
 }
-
 .dropdown-content::-webkit-scrollbar {
     width: 8px;
 }
-
 .dropdown-content::-webkit-scrollbar-track {
     background: #333;
 }
-
 .dropdown-content::-webkit-scrollbar-thumb {
     background: #333;
     border-radius: 0;
@@ -349,11 +382,27 @@ body {
     align-items: start;
     width: auto;
     height:auto;
-    margin: 0;
+    margin: 30px 0px 0px 0px;
     padding: 15px 10px;
     font-size: 14pt;
     color: white;
     background-color: #333;
+    border-radius: 5px;
+}
+/* End Of Design Tool Page Content */
+
+/* Module Library Content */
+.module-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    overflow: visible;
+    flex-wrap: wrap;
+    height: auto;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 0px;
 }
 .module-info-links{
     display: flex;
@@ -361,30 +410,29 @@ body {
     align-items: left;
     justify-content: space-between;
     height: auto;
-    width: fit-content;
+    width: 250px;
     padding: 5px 0px;
-    margin: 0 0;
-    font-size: 10pt;
-    background-color: lightblue;
+    margin: 15px;
+    background-color: none;
 }
 .module-info-links a{
     width: auto;
     height: auto;
+    text-align: center;
     margin: 10px;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: lightblue;
+    color: #333;
     text-decoration: none;
     font-size: 15px;
+    border-radius: 10px;
 }
 .module-info-links a:hover{
-    background-color: #888;
-    color: black;
+    background-color: #333;
+    color: lightblue;
 }
+/* End Of Module Library Content */
 /*END OF CONTENT STYLING*/
-
-
-
 
 /*FOOTER STYLE*/
 .footer {
@@ -401,7 +449,6 @@ body {
     height: auto;
     padding: 10px;
 }
-
 .footer-A {
     display: flex;
     flex-direction: row;
@@ -413,7 +460,6 @@ body {
     height: auto;
     text-align: center;
 }
-
 .footer-text{
     color: lightgrey;
     font-size: 7pt;
@@ -422,7 +468,6 @@ body {
     margin-top: 0px;
     text-align: left;
 }
-
 .footer-B{
     color: lightgrey;
     font-size: 6pt;
@@ -434,6 +479,9 @@ body {
 
 }
 /*END FOOTER STYLE*/
+
+
+
 
 
 /*Start Modules style*/
@@ -501,19 +549,8 @@ body {
     width: 24px;
     height: 24px;
 }
-
 /*.dropdown-content::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-
-/* Styling for the search and add button container */
-.search-add-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px; /* Move below the modules list */
-    background-color: #333;
 }
 /* Styling for the quantity input */
 .item-quantity {
@@ -528,7 +565,6 @@ body {
 .voltage-selector {
     margin-bottom: 20px;
 }
-
 .compatibility-warning {
     margin: 0px;
     font-size: 1rem;
@@ -544,19 +580,16 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .makerspaceImage {
     position: relative; /* Ensure the container is positioned relative */
     width: 100%; /* Ensure the container takes the full width */
     overflow: hidden; /* Hide any overflow */
 }
-
 .makerspaceImage img {
     width: 100%; /* Ensure the image scales with the container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any extra space below the image */
 }
-
 .centered {
     position: absolute;
     top: 50%; /* Center vertically */
