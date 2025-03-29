@@ -231,9 +231,9 @@ body {
     display: block;
     height:auto;
     margin: 30px 30px;
-    padding: 10px;
+    padding: 15px;
     background-color: lightblue;
-    border-radius: 5px;
+    border-radius: 20px;
 
 }
 .input-container{
@@ -388,7 +388,7 @@ body {
     font-size: 14pt;
     color: white;
     background-color: #333;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 /* End Of Design Tool Page Content */
 
@@ -445,7 +445,7 @@ body {
     width: auto;
     margin: 0 0 0 auto;
     height: auto;
-    padding: 0px;
+    padding: 10px 0px 20px 0px;
     font-size: 8pt;
 }
 .footer-A {
@@ -468,7 +468,6 @@ body {
     height: auto;
     text-align: left;
     margin: 0px auto 0px 0px;
-    border: 2px solid tomato;
 }
 .footer-info-right{
     display: flex;
@@ -478,7 +477,6 @@ body {
     width: fit-content;
     height: auto;
     margin: 0px 0px 0px auto;
-    border: 2px solid tomato;
 }
 .footer-info-right a{
     color: #888;
@@ -493,7 +491,7 @@ body {
 .footer-B{
     padding: 0px;
     width:fit-content;
-    margin: 10px auto;
+    margin: 10px auto 0px auto;
     text-align: center;
 }
 /*END FOOTER STYLE*/
