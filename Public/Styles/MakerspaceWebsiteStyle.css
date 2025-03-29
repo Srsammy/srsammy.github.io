@@ -92,9 +92,9 @@ body {
 }
 .text-container {
     position: static;
-    width: 100%;
+    width: auto;
     height: auto;
-    margin: auto;
+    margin: 30px;
     padding: 0px;
 }
 .page-title {
@@ -157,13 +157,26 @@ body {
 }
 .normal-text{
     width: auto;
-    margin: 30px;
-    padding: 10px;
+    margin: 20px 0px;
+    padding: 0px;
     font-size: 12pt;
     text-align: left;
     color: black;
     background-color: white;
     
+}
+.normal-text a {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: lightblue;
+    color: #333;
+    text-decoration: none;
+    border-radius:7px;
+}
+.normal-text a:hover {
+    background-color: #333;
+    color: lightblue;
 }
 .centered-text{
     width: 75%;
@@ -174,6 +187,13 @@ body {
     color: black;
     background-color: white;
     
+}
+.normal-list-text{
+    margin: 30px 0px;
+    padding: 0px 40px;
+}
+.normal-list-text li{
+    margin: 15px 0px
 }
 .button-container {
     display: flex;
