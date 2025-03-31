@@ -4,7 +4,7 @@ let selectedModule = null; // Currently selected module from the dropdown
 
 // Function to load and parse the CSV file
 async function loadTSV() {
-    const response = await fetch('V1.1 - For Spencer. No touchy.tsv'); // Fetch the CSV file
+    const response = await fetch('../Data.tsv'); // Fetch the CSV file
     const data = await response.text(); // Get the text content of the CSV
     const rows = data.split('\n').slice(1); // Split into rows and remove the header
 
