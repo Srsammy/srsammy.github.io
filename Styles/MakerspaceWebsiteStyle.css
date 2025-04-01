@@ -3,15 +3,15 @@
 /* Imported font families */
 @font-face {
     font-family: Alumni_Sans_Pinstripe;
-    src: url(/Public/Styles/Fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
+    src: url(/Styles/Fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
 }
 @font-face {
     font-family: Nunito;
-    src: url(/Public/Styles/Fonts/Nunito/static/Nunito-Regular.ttf);
+    src: url(/Styles/Fonts/Nunito/static/Nunito-Regular.ttf);
 }
 @font-face {
     font-family: Nunito-Italic;
-    src: url(/Public/Styles/Fonts/Nunito/static/Nunito-Italic.ttf);
+    src: url(/Styles/Fonts/Nunito/static/Nunito-Italic.ttf);
 }
 /* End Of Imported Font Families */
 
