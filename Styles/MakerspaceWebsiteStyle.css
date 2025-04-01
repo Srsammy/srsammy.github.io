@@ -264,8 +264,8 @@ body {
     height: auto;
     width: auto;
     padding: 0px;
-    margin: 0px 0px 0px 10px;
-    font-size: 10pt;
+    margin: 0px 0px 0px 0px;
+    font-size: 12pt;
 
 }
 .module-list-container{
@@ -335,17 +335,15 @@ body {
     padding: 0px 5px;
 }
 .dropdown-content {
-    display: none;
-    position: absolute;
-    color: white;
-    background-color: #333;
-    min-width: 160px;
-    max-height: 150px;
-    overflow-y: auto;
+    display: block;
+    position: static;
+    color: #333;
+    background-color: white;
+    height:120px;
+    overflow-y: scroll;
     box-shadow: 0px 8px 16px #333;
     z-index: 1;
     bottom: 100%;
-    border-radius: 5px;
 }
 .dropdown-content input {
     width: 100%;
@@ -357,7 +355,8 @@ body {
     cursor: pointer;
 }
 .dropdown-content div:hover {
-    background-color: grey;
+    color: lightblue;
+    background-color: #333;
 }
 .show {
     display: block;
@@ -388,6 +387,49 @@ body {
     color: white;
     background-color: #333;
 }
+.item-list{
+    display: block;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height:auto;
+    width:auto;
+    margin: 30px 0px;
+}
+.item-wrapper {
+    padding: 10px; /* Reduced padding */
+    margin: 10px 0px;
+    width: auto;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+/* Styling for the item row */
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.details {
+    display: block;
+    margin-left: 30px;
+    font-size: 10pt;
+}
+.item-quantity {
+    padding: 2.5px 0px;
+    width: 60px;
+    text-align: right;
+    font-family: inherit;
+    font-size: 10pt;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+}
+.item-quantity-container {
+    margin: 0px 10px 0px auto;
+}
 .SubtotalHeader{
     display: block;
     height: auto;
@@ -400,15 +442,19 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    align-items: space-evenly;
     width: auto;
     height:auto;
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 15px 10px;
-    font-size: 14pt;
     color: white;
     background-color: #333;
     border-radius: 10px;
+}
+.compatibility-warning {
+    margin: 0px;
+    height:auto;
+    color: rgb(255, 153, 0);
 }
 /* End Of Design Tool Page Content */
 
@@ -565,26 +611,6 @@ body {
     height: 20px;
     transition: transform 0.3s ease;
 }
-/* Styling for the hidden details section */
-.details {
-    display: none;
-    margin-left: 30px;
-    font-size: 0.9rem;
-    color: rgb(68, 68, 68);
-}
-/* Wrapper for each item and its details */
-.item-wrapper {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 5px; /* Reduced padding */
-    margin-bottom: 10px;
-}
-/* Styling for the item row */
-.item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 /* Styling for the delete button */
 .delete-btn {
     cursor: pointer;
@@ -601,28 +627,7 @@ body {
 /*.dropdown-content::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-/* Styling for the quantity input */
-.item-quantity {
-    width: 60px; /* Smaller width for quantity input */
-    text-align: right; /* Align quantity input to the right */
-}
-/* Align the counter to the right */
-.item-quantity-container {
-    margin-left: auto; /* Push the quantity input to the right */
-}
-/* Styling for the voltage selector */
-.voltage-selector {
-    margin-bottom: 20px;
-}
-.compatibility-warning {
-    margin: 0px;
-    font-size: 1rem;
-    color: rgb(255, 153, 0);
-}
-.item-list {
-    margin: 0px;
-    width: 70%;
-}
+*/
 .ModuleList {
     width: 700px;
     margin: auto;
