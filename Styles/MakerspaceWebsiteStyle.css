@@ -122,15 +122,11 @@ body {
     background-color: #333;
 }
 .quote-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
     position: static;
     height: auto;
     width: auto;
     margin: 20px 30px;
-    padding: 0;
+    padding: 20px 20px;
     text-align: center;
     border-radius: 20px;
     color: white;
@@ -140,7 +136,7 @@ body {
     position: static;
     width: auto;
     height: auto;
-    margin: 0;
+    margin: 0px 0px 20px 0px;
     padding: 0;
     text-align: left;
     font-size: 10pt;
@@ -148,12 +144,12 @@ body {
 .quote-author{
     position: static;
     height: auto;
-    width: max-content;
+    width: auto;
     margin: 0px 0px 0px 0px;
     padding: 0;
     text-align: right;
     font-family: Alumni_Sans_Pinstripe, Helvetica, sans-serif;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 .normal-text{
     width: auto;
