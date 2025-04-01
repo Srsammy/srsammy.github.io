@@ -442,7 +442,7 @@ body {
     width: auto;
     height:auto;
     margin: 0px 0px 0px 0px;
-    padding: 15px 10px;
+    padding: 15px;
     color: white;
     background-color: #333;
     border-radius: 10px;
@@ -450,7 +450,7 @@ body {
 .compatibility-warning {
     margin: 0px;
     height:auto;
-    color: rgb(255, 153, 0);
+    color: orangered;
 }
 /* End Of Design Tool Page Content */
 
