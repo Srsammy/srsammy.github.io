@@ -57,7 +57,7 @@ function updateTotalAmperage() {
 function displayCompatibilityWarning(incompatibleModules, voltage) {
     const warningElement = document.getElementById('compatibility-warning');
     if (incompatibleModules.length > 0) {
-        warningElement.textContent = `Warning: The following modules are not compatible with ${voltage}V: ${incompatibleModules.join(', ')}`;
+        warningElement.textContent = `The selected voltage of ${voltage}V: does not work with ${incompatibleModules.join(', ')}`;
     } else {
         warningElement.textContent = '';
     }
@@ -70,6 +70,6 @@ function updateCompatibilityWarning() {
 
     const warningElement = document.getElementById('compatibility-warning');
     if (modulesNeedingComputer.length > 0 && !computerLabSelected) {
-        warningElement.textContent = `Warning: The following modules require a computer but the Computer Lab is not selected: ${modulesNeedingComputer.map(item => item.module).join(', ')}`;
+        warningElement.textContent = `These modules require the Computer Lab: ${modulesNeedingComputer.map(item => item.module).join(', ')}`;
     }
 }
