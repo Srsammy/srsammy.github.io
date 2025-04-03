@@ -305,6 +305,7 @@ body {
     color: white;
     background-color: #333;
     border-radius: 5px;
+    
 }
 .dropdown::placeholder{
     color: white;
@@ -331,7 +332,7 @@ body {
     padding: 0px 5px;
 }
 .dropdown-content {
-    display: block;
+    display: none;
     position: static;
     color: #333;
     background-color: white;
@@ -408,7 +409,7 @@ body {
     justify-content: space-between;
 }
 .details {
-    display: block;
+    display: none;
     margin-left: 30px;
     font-size: 10pt;
 }
