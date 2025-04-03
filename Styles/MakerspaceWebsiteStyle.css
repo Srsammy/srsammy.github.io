@@ -174,6 +174,30 @@ body {
     background-color: #333;
     color: lightblue;
 }
+.table {
+    align-items: center;
+    margin: auto; 
+    border-collapse: collapse; 
+    width: 60%; 
+    text-align: center;
+}
+.table a {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: lightblue;
+    color: #333;
+    text-decoration: none;
+    border-radius:7px;  
+}
+.table a:hover {
+    background-color: #333;
+    color: lightblue;
+}
+.th {
+    padding: 10px; 
+    border: 1px solid black;
+}
 .centered-text{
     width: 75%;
     margin: 0px auto;
