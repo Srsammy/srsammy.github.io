@@ -81,7 +81,6 @@ function renderItemList() {
 
         const resourceLine = document.createElement('span');
         resourceLine.style.display = 'block';
-        resourceLine.textContent = 'Resource Page: ';
         resourceLine.appendChild(resourceLink);
 
         details.appendChild(resourceLine);
