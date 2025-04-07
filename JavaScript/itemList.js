@@ -67,18 +67,25 @@ function renderItemList() {
             if (item.amperage240v > 0) detailsContent.push(`Amperage (240V): ${item.amperage240v.toFixed(2)}A`);
         }
 
-        // Add remaining details
+        // Add resources links
+        let resourceUrl = item.resourcePage.split(':')[0].trim();
+        if (!resourceUrl.endsWith('.html')) {
+            resourceUrl += '.html';
+        }
+
         const resourceLink = document.createElement('a');
-        resourceLink.href = item.resourcePage.startsWith('http') ? item.resourcePage : `/${item.resourcePage}`;
+        resourceLink.href = resourceUrl.startsWith('http') ? resourceUrl : `/${resourceUrl}`;
         resourceLink.textContent = 'Resource Page';
-        resourceLink.target = '_blank'; // Open in new tab
-        resourceLink.style.textDecoration = 'underline'; // Make it look like a link
+        resourceLink.target = '_blank';
+        resourceLink.style.textDecoration = 'underline';
 
         const resourceLine = document.createElement('span');
         resourceLine.style.display = 'block';
+        resourceLine.textContent = 'Resource Page: ';
         resourceLine.appendChild(resourceLink);
 
         details.appendChild(resourceLine);
+
 
         // Loop through the details content and add them to the details section
         detailsContent.forEach(detail => {
