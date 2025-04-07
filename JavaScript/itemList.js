@@ -63,12 +63,22 @@ function renderItemList() {
             if (item.amperage120v > 0) compatibleVoltages.push('120V');
             if (item.amperage240v > 0) compatibleVoltages.push('240V');
             detailsContent.push(`Voltage: ${compatibleVoltages.join(' & ')}`);
-            detailsContent.push(`Amperage (120V): ${item.amperage120v.toFixed(2)}A`);
-            detailsContent.push(`Amperage (240V): ${item.amperage240v.toFixed(2)}A`);
+            if (item.amperage120v > 0) detailsContent.push(`Amperage (120V): ${item.amperage120v.toFixed(2)}A`);
+            if (item.amperage240v > 0) detailsContent.push(`Amperage (240V): ${item.amperage240v.toFixed(2)}A`);
         }
 
         // Add remaining details
-        detailsContent.push(`Resource Page: ${item.resourcePage}`);
+        const resourceLink = document.createElement('a');
+        resourceLink.href = item.resourcePage.startsWith('http') ? item.resourcePage : `/${item.resourcePage}`;
+        resourceLink.textContent = 'Resource Page';
+        resourceLink.target = '_blank'; // Open in new tab
+        resourceLink.style.textDecoration = 'underline'; // Make it look like a link
+
+        const resourceLine = document.createElement('span');
+        resourceLine.style.display = 'block';
+        resourceLine.appendChild(resourceLink);
+
+        details.appendChild(resourceLine);
 
         // Loop through the details content and add them to the details section
         detailsContent.forEach(detail => {
