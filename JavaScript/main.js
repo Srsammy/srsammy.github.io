@@ -13,6 +13,9 @@ async function loadTSV() {
         const columns = row.split('\t'); // Split the row into columns
         if (columns.length > 1) { // Ensure the row is not empty
             // Map columns to an object with meaningful properties
+            const module = columns[0];
+            const moduleName = module.replace(/\s+/g, '_'); // Replace spaces with underscores
+            const moduleURL = `modules/${moduleName}.html`; // Create the URL
             items.push({
                 module: columns[0],
                 finished: columns[1],
@@ -25,11 +28,11 @@ async function loadTSV() {
                 voltage: columns[8],
                 amperage120v: parseFloat(columns[9]),
                 amperage240v: parseFloat(columns[10]),
-                resourcePage: columns[11],
+                resourcePage: moduleURL,
                 number: columns[12],
                 needsComputer: columns[13].toLowerCase() === 'true', // Convert to boolean
                 maintenance: columns[14],
-                requirements: columns[15]
+                requirements: columns[15],
             });
         }
     });
