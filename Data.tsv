@@ -1,19 +1,18 @@
-Module	Finished	Upfront Cost	Depth (m)	Width (m)	Area (m^2)	Position	Watts	Voltage	Amperage (120v)	Amperage (240v)	Resource page?	Number	Needs computer?	Maintenance (Docs and times)	Requirements	What is this thing?	How do I use this?	What is something I can do or make with this?
-3D Printer	TRUE	220.00	1	1	1	Table or Shelf	350	360	2.92	1.46		1	TRUE					
-Basic Art	TRUE	695.75	6	3	18	Table or Storage	0	0	0.00	0.00		2	FALSE		Quiet - Water			
-Bike Repair	TRUE	143.64	3	4	12	Floor	0	0	0.00	0.00		3	FALSE			The bike repair module is a space equipped with various tools to allow individuals to perform maintenance, repair, and upgrade their bikes. It will provide users with a means to fix common bike issues such as flat tires, brake adjustments, and more. This module will include basic tools like wrenches, tire levers, and screwdrivers, as well as specialized equipment such as chain breakers, spoke wrenches, and a bike repair stand if you wish to have one (Not necessary to perform maintenance but would make it a little easier). This module would serve as a hands-on environment where people with no experience as well as people who used to work with bikes for a living could come in and address any issues they may have with their bikes.	To use this module, someone could come and set up their bikes within the space allowing them access to any part of their bikes that might require maintenance. Next, they will follow a chart that has videos on how to repair the most common issues when looking at a bike along with any tool necessary to perform it and how to use the tool properly and safely. After going through the video and completing the proper maintenance on their bikes, they will have learned how to diagnose their bike problems and carry out the proper techniques to repair them.	An example of something that someone could do with this space is repair their bike tire. Say something hit your back tire and now you have a flat tire and the frame of it is wobbly. You could come in and select the tire tab, and you would need to watch two different videos, one that would teach you how to remove, patch, or replace the innertube, fill it with air, and test it to ensure it doesn’t leak. The other video would teach you how to perform spoke adjustments to realign your tire so that it doesn’t wobble. Once completed with the help of the video tutorials and the provided tools, you could leave with not only a fixed bike but the knowledge of how to perform those specific repairs in case it were to happen again.
-Carpentry	TRUE	225.00	3	4	12	Table	60	0	0.00	0.25		4	FALSE					
-Coding Class	TRUE	0.00	0	0	0	Table	0	0	0.00	0.00		5	TRUE					
-Computer Lab	TRUE	1,067.96	2	2	4	Table and chair	306	120	2.55	1.28		6	TRUE					
-Cosmetology: Hair	TRUE	230.78	4	3	12	Chair	0	240	0.00	0.00		7	FALSE		Overlap with Cosmetology: Makeup			
-Cosmetology: Makeup	TRUE	352.32	4	3	12	Chair	0	120	0.00	0.00		8	FALSE		Overlap with Cosmetology: Hair			
-Cosmetology: Nails	TRUE	187.08	4	3	12	Table	0	120	0.00	0.00		9	FALSE					
-Data recovery	TRUE	678.00	0	0	0	Storage	0	0	0.00	0.00		10	TRUE		Electronics Repair			
-Electronics Repair	TRUE	134.00	0	0	0	Table	700	120	5.83	2.92		11	FALSE					
-English Class	FALSE	0.00	3	3	9	Table or Storage		0	0.00	0.00		12	FALSE		Quiet - if Basic Art Module - no extra area is needed			
-Metal: Basic	TRUE	161.21	2	2	4	Table	0	0	0.00	0.00		13	FALSE					
-Metal: Professional	TRUE	1,277.32	3	7	21	Table	2820	120	23.50	11.75		14	FALSE		Ventilation & its own room			
-Music	TRUE	166.00	3	7	21	Floor	0	0	0.00	0.00		15	FALSE		Quiet			
-Plumbing	TRUE	227.43	3	5	15	Floor	0	0	0.00	0.00		16	FALSE					
-Sewing	TRUE	398.78	2	2	4	Table	84	120	0.70	0.35		17	FALSE					
-Street Food	TRUE	210.00	3	4	12	Floor	2000	120	16.67	8.33		18	FALSE					
+Module	Finished	Upfront Cost	Depth (m)	Width (m)	Area (m^2)	Position	Watts	Voltage	Amperage (120v)	Amperage (240v)	Resource page?	Number	Needs computer?	Maintenance (Docs and times)	Requirements
+3D Printing	TRUE	220.00	1	1	1	Table or Shelf	350	360	2.92	1.46		1	TRUE		
+Basic Art	TRUE	695.75	6	3	18	Table or Storage	0	0	0.00	0.00		2	FALSE		Quiet - Water
+Bicycle Repair	TRUE	143.64	3	4	12	Floor	0	0	0.00	0.00		3	FALSE		
+Carpentry	TRUE	225.00	3	4	12	Table	60	0	0.00	0.25		4	FALSE		
+Coding Class	TRUE	0.00	0	0	0	Table	0	0	0.00	0.00		5	TRUE		
+Computer Lab	TRUE	1,067.96	2	2	4	Table and chair	306	120	2.55	1.28		6	TRUE		
+Cosmetology: Hair	TRUE	230.78	4	3	12	Chair	0	240	0.00	0.00		7	FALSE		Overlap with Cosmetology: Makeup
+Cosmetology: Makeup	TRUE	352.32	4	3	12	Chair	0	120	0.00	0.00		8	FALSE		Overlap with Cosmetology: Hair
+Cosmetology: Nails	TRUE	187.08	4	3	12	Table	0	120	0.00	0.00		9	FALSE		
+Data recovery	TRUE	678.00	0	0	0	Storage	0	0	0.00	0.00		10	TRUE		Electronics Repair
+Electronics Repair	TRUE	134.00	0	0	0	Table	700	120	5.83	2.92		11	FALSE		
+Metal Fabrication: Basic	TRUE	161.21	2	2	4	Table	0	0	0.00	0.00		13	FALSE		
+Metal Fabrication: Professional	TRUE	1,277.32	3	7	21	Table	2820	120	23.50	11.75		14	FALSE		Ventilation & its own room
+Music	TRUE	166.00	3	7	21	Floor	0	0	0.00	0.00		15	FALSE		Quiet
+Plumbing	TRUE	227.43	3	5	15	Floor	0	0	0.00	0.00		16	FALSE		
+Sewing	TRUE	398.78	2	2	4	Table	84	120	0.70	0.35		17	FALSE		
+Street Food	TRUE	210.00	3	4	12	Floor	2000	120	16.67	8.33		18	FALSE		
