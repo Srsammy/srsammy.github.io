@@ -3,6 +3,7 @@ function updateTotals() {
     updateTotalCost();
     updateTotalWattage();
     updateTotalAmperage();
+    updateTotalFootage();
     updateCompatibilityWarning();
     clearDropdown();
     saveURL() //Get rid of if the page reloads after every refresh
@@ -52,6 +53,15 @@ function updateTotalAmperage() {
     displayCompatibilityWarning(incompatibleModules, voltage);
 }
 
+// Function to update the total wattage
+function updateTotalFootage() {
+    let totalFootage = selectedModules.reduce((sum, item) => sum + item.area * item.quantity, 0);
+    
+    // Update all elements with the class 'total-wattage'
+    document.querySelectorAll('.total-footage').forEach(el => {
+        el.textContent = totalFootage;
+    });
+}
 
 // Function to display compatibility warnings
 function displayCompatibilityWarning(incompatibleModules, voltage) {
