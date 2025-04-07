@@ -8,7 +8,7 @@ Computer Lab	TRUE	1,067.96	2	2	4	Table and chair	306	120	2.55	1.28		6	TRUE
 Cosmetology: Hair	TRUE	230.78	4	3	12	Chair	0	240	0.00	0.00		7	FALSE		Overlap with Cosmetology: Makeup
 Cosmetology: Makeup	TRUE	352.32	4	3	12	Chair	0	120	0.00	0.00		8	FALSE		Overlap with Cosmetology: Hair
 Cosmetology: Nails	TRUE	187.08	4	3	12	Table	0	120	0.00	0.00		9	FALSE		
-Data recovery	TRUE	678.00	0	0	0	Storage	0	0	0.00	0.00		10	TRUE		Electronics Repair
+Data Recovery	TRUE	678.00	0	0	0	Storage	0	0	0.00	0.00		10	TRUE		Electronics Repair
 Electronics Repair	TRUE	134.00	0	0	0	Table	700	120	5.83	2.92		11	FALSE		
 Metal Fabrication: Basic	TRUE	161.21	2	2	4	Table	0	0	0.00	0.00		13	FALSE		
 Metal Fabrication: Professional	TRUE	1,277.32	3	7	21	Table	2820	120	23.50	11.75		14	FALSE		Ventilation & its own room
