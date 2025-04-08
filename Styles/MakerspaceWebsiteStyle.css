@@ -177,6 +177,7 @@ body {
 .table {
     align-items: center;
     margin: auto; 
+    padding-bottom: 20px;
     border-collapse: collapse; 
     width: 60%; 
     text-align: center;
