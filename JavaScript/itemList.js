@@ -41,6 +41,9 @@ function renderItemList() {
         // Item name label
         const label = document.createElement('span');
         label.textContent = item.module;
+        label.dataset.index = index;
+        label.style.cursor = 'pointer';  
+        label.style.userSelect = 'none';
 
         // Hidden details section
         const details = document.createElement('div');
@@ -129,14 +132,39 @@ function renderItemList() {
         itemList.appendChild(itemWrapper);
     });
 
-    // Add event listeners to toggle icons to show/hide details
-    document.querySelectorAll('.toggle-icon').forEach(icon => {
-        icon.addEventListener('click', () => {
-            const index = icon.dataset.index;
-            const details = document.querySelector(`.details[data-index='${index}']`);
-            const isVisible = details.style.display === 'block';
-            details.style.display = isVisible ? 'none' : 'block';
+    // Function to toggle details
+    function toggleDetails(index) {
+        const details = document.querySelector(`.details[data-index='${index}']`);
+        const icon = document.querySelector(`.toggle-icon[data-index='${index}']`);
+        const isVisible = details.style.display === 'block';
+        details.style.display = isVisible ? 'none' : 'block';
+        if (icon) {
             icon.style.transform = isVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+    }
+
+    // Add click event to toggle icon
+    document.querySelectorAll('.toggle-icon').forEach(icon => {
+        icon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleDetails(icon.dataset.index);
+        });
+    });
+
+    // Add click event to module name label
+    document.querySelectorAll('.item-container > span').forEach(label => {
+        label.addEventListener('click', () => {
+            toggleDetails(label.dataset.index);
+        });
+    });
+
+    // Optional: Add click event to entire item container if you want
+    document.querySelectorAll('.item-container').forEach(container => {
+        container.addEventListener('click', (e) => {
+            // Only trigger if we didn't click on the icon directly
+            if (!e.target.classList.contains('toggle-icon')) {
+                toggleDetails(container.dataset.index);
+            }
         });
     });
 
