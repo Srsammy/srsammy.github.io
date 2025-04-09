@@ -106,7 +106,7 @@ function renderItemList() {
 
         // Delete button
         const deleteBtn = document.createElement('img');
-        deleteBtn.src = 'https://img.icons8.com/ios/50/plus--v1.png';
+        deleteBtn.src = 'https://img.icons8.com/material-outlined/24/plus--v1.png';
         deleteBtn.alt = 'Delete';
         deleteBtn.classList.add('delete-btn');
         deleteBtn.onclick = () => deleteModule(index);
