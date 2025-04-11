@@ -167,6 +167,13 @@ body {
     background-color: lightblue;
     border-radius: 20px;
 }
+.needs-row{
+    display: flex;
+    flex-direction: row;
+}
+.needs-pyramid{
+    height:400px;
+}
 /*END OF HERO SECTION STYLING*/
 
 /*BEGINNING OF CONTENT STYLING*/
