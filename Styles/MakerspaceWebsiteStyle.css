@@ -22,6 +22,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: Nunito, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 /* End Of Default Body Style */
 
@@ -33,10 +34,10 @@ body {
     justify-content: space-between;
     flex-direction: row;
     overflow: hidden;
-    margin: 0;
+    margin: 0px;
     height: auto; 
     width: auto;
-    padding: 5px;
+    padding: 0px;
     font-size: 12pt;
     background: #333;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
@@ -61,6 +62,8 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-grow: 1;
+    margin: 20px 30px;
+    padding: 0px;
 }
 .nav-item {
     margin: 10px;
@@ -81,6 +84,90 @@ body {
     background-color: #888;
 }
 /*END OF NAVBAR STYLING*/
+
+/*HERO SECTION STYLING*/
+.hero-container{
+    position: static;
+    display: block;
+    width:100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 75px 30px;
+    margin-top: 0px;
+    font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;
+    background-image: url(/Images/Prototype_lab.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height:fit-content;
+    margin: 0px;
+    padding: 0px;
+}
+.hero-title{
+    width: fit-content;
+    height: auto;
+    margin: 0px;
+    padding: 10px 40px;
+    font-size: 80pt;
+    font-weight: bolder;
+    border-radius: 30px;
+    color: white;
+    background-color: rgba(51,51,51,1);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+}
+.hero-CTA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: auto;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+.hero-normal-text{
+    color: black;
+    font-size: 25pt;
+    font-weight: bold;
+    background-color: none;
+    text-align: start;
+}
+.hero-centered-text{
+    color: black;
+    font-size: 25pt;
+    font-weight: bold;
+    background-color: none;
+    text-align: center;
+    margin: 10px auto;
+}
+.hero-button{
+    width: max-content;
+    margin: 30px auto;
+    padding: 30px;
+    font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color:  rgba(51,51,51,1);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    transition: 750ms;
+}
+.hero-button:hover{
+    scale: 1.05;
+    text-decoration: none;
+    color: #333;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+/*END OF HERO SECTION STYLING*/
 
 /*BEGINNING OF CONTENT STYLING*/
 /* General Page Content */
