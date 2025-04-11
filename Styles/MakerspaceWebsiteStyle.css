@@ -37,7 +37,9 @@ body {
     height: auto; 
     width: auto;
     padding: 5px;
+    font-size: 12pt;
     background: #333;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .logo {
     height: 70px;
@@ -48,10 +50,11 @@ body {
     height: 70px;
     padding: 3px;
     border:2px solid #333;
+    border-radius: 10px;
+    transition: 200ms;
 }    
 .logo-anchor:hover{
     border-color:lightblue;
-    border-radius: 10px;
 }
 .nav-list {
     list-style: none;
@@ -61,18 +64,20 @@ body {
 }
 .nav-item {
     margin: 10px;
+    width: max-content;
 }
 .nav-item a {
     display: block;
     padding: 18px 20px;
     text-decoration: none;
+    border-radius: 10px;
     color: white;
+    transition: 200ms;
 
 }
 .nav-item a:hover {
     background-color: lightblue;
     color: black;
-    border-radius: 10px;
     background-color: #888;
 }
 /*END OF NAVBAR STYLING*/
@@ -106,6 +111,7 @@ body {
     font-size: 50pt;
     border-radius: 20px;
     background-color: lightblue;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 
 }
 .subtitle {
@@ -120,6 +126,7 @@ body {
     border-radius: 15px;
     color: white;
     background-color: #333;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .quote-container{
     position: static;
@@ -131,6 +138,7 @@ body {
     border-radius: 20px;
     color: white;
     background-color: #333;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .quote-text{
     position: static;
@@ -235,11 +243,14 @@ body {
     padding: 10px 30px;
     background-color: lightblue;
     color: #333;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.25);
     text-decoration: none;
     font-size: 15px;
     border-radius:10px;
+    transition: 200ms;
 }
 .button-container a:hover {
+    scale: 1.05;
     background-color: #333;
     color: lightblue;
 }
@@ -521,8 +532,11 @@ body {
     text-decoration: none;
     font-size: 15px;
     border-radius: 10px;
+    transition: 200ms;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
 }
 .module-info-links a:hover{
+    scale: 1.05;
     background-color: #333;
     color: lightblue;
 }
@@ -556,6 +570,7 @@ body {
     height: auto;
     padding: 5px 0px;
     font-size: 8pt;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .footer-A {
     display: flex;
@@ -692,12 +707,12 @@ body {
 .module-inclusion-container {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     background: white;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 .module-inclusion-image {
