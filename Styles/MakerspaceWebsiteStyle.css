@@ -167,12 +167,47 @@ body {
     background-color: lightblue;
     border-radius: 20px;
 }
-.needs-row{
+.needs-container{
     display: flex;
     flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 0px;
+    padding: 20px 30px;
+    background-color: lightblue;
+}
+.needs-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: fit-content;
+    height: auto;
+    margin: 0px 30px;
+    padding: 0px;
+
+}
+.needs-tile{
+    margin: 30px 0px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+
+}
+.needs-subtitle{
+    font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;;
+    font-size:40pt;
+    font-weight: bold;
+    margin: 0px auto;
 }
 .needs-pyramid{
+    position: sticky;
+    top: 50px;
     height:400px;
+    margin: 30px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 /*END OF HERO SECTION STYLING*/
 
