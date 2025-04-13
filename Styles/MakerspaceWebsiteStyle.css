@@ -160,6 +160,19 @@ body {
     border-radius: 20px;
     transition: 750ms;
 }
+.what-refugee-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: 20px 30px;
+}
+.what-refugee-icons{
+    height:400px;
+    margin: 30px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+}
 .hero-button:hover{
     scale: 1.05;
     text-decoration: none;
@@ -175,31 +188,6 @@ body {
     margin: 0px;
     padding: 20px 30px;
     background-color: lightblue;
-}
-.needs-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    width: fit-content;
-    height: auto;
-    margin: 0px 30px;
-    padding: 0px;
-
-}
-.needs-tile{
-    margin: 30px 0px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
-
-}
-.needs-subtitle{
-    font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;;
-    font-size:40pt;
-    font-weight: bold;
-    margin: 0px auto;
 }
 .needs-pyramid{
     position: sticky;
@@ -223,6 +211,29 @@ body {
     margin-top: 0px;
     align-items: center;
     
+}
+.tile-subtitle{
+    font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;;
+    font-size:40pt;
+    font-weight: bold;
+    margin: 0px auto;
+}
+.tile-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: fit-content;
+    height: auto;
+    margin: 0px 30px;
+    padding: 0px;
+}
+.text-tile{
+    margin: 30px 0px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .text-container {
     position: static;
