@@ -854,46 +854,43 @@ body {
     border-radius: 10px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
 }
-
 .module-inclusion-image {
     width: 30%;
     border-radius: 8px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.25);
 }
 .module-inclusion-details {
     width: 30%;
     padding-left: 200px;
 }
-
 .module-inclusion-name {
     font-size: 24px;
-    color: #333;
+    color: black;
     margin-bottom: 10px;
 }
-
 .module-inclusion-usage {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 5px;
-    width: auto;
+    width: max-content;
     height: auto;
     padding: 5px;
-    background-color: lightblue;
     color: #333;
     text-decoration: none;
     border-radius:7px;  
 }
-
 .module-inclusion-usage a {
     width: auto;
     height: auto;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px 30px;
     background-color: lightblue;
     color: #333;
     text-decoration: none;
-    border-radius:7px;
+    font-size: 15px;
+    border-radius:10px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.25);
+    transition: 200ms;
 }
-
-.module-inclusion-usage:hover {
+.module-inclusion-usage a:hover {
+    scale: 1.05;
     background-color: #333;
     color: lightblue;
 }
