@@ -860,8 +860,8 @@ body {
     border-radius: 8px;
 }
 .module-inclusion-details {
-    width: 70%;
-    padding-left: 20px;
+    width: 30%;
+    padding-left: 200px;
 }
 
 .module-inclusion-name {
@@ -870,10 +870,33 @@ body {
     margin-bottom: 10px;
 }
 
-.module-inclusion-description, 
 .module-inclusion-usage {
     font-size: 16px;
     color: #555;
     margin-bottom: 5px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: lightblue;
+    color: #333;
+    text-decoration: none;
+    border-radius:7px;  
 }
+
+.module-inclusion-usage a {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: lightblue;
+    color: #333;
+    text-decoration: none;
+    border-radius:7px;
+}
+
+.module-inclusion-usage:hover {
+    background-color: #333;
+    color: lightblue;
+}
+
+
 /*End of Module Inclusion list*/
