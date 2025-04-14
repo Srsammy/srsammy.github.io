@@ -1,5 +1,15 @@
 /* REFUGEE WORKS HTML STYLE SHEET */
 
+/* Colors
+
+Grey: #605b56
+Green: #b3d89c
+Blue:#77a6b6
+
+*/
+
+
+
 /* Imported font families */
 @font-face {
     font-family: Alumni_Sans_Pinstripe;
@@ -55,7 +65,7 @@ body {
     transition: 200ms;
 }    
 .logo-anchor:hover{
-    border-color:lightblue;
+    border-color:#77a6b6;
 }
 .nav-list {
     list-style: none;
@@ -79,9 +89,8 @@ body {
 
 }
 .nav-item a:hover {
-    background-color: lightblue;
     color: black;
-    background-color: #888;
+    background-color: #605b56;
 }
 /*END OF NAVBAR STYLING*/
 
@@ -89,7 +98,7 @@ body {
 .hero-container{
     position: static;
     display: block;
-    width:100%;
+    width:auto;
     height: auto;
     margin: 0px;
     padding: 75px 30px;
@@ -117,7 +126,7 @@ body {
     font-weight: bolder;
     border-radius: 30px;
     color: white;
-    background-color: rgba(51,51,51,1);
+    background-color: #605b56;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .hero-CTA{
@@ -154,11 +163,20 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: white;
-    background-color:  rgba(51,51,51,1);
+    background-color:  #605b56;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
     border-radius: 20px;
     transition: 750ms;
 }
+.hero-button:hover{
+    scale: 1.05;
+    text-decoration: none;
+    color: black;
+    background-color: #77a6b6;
+    border-radius: 20px;
+}
+/* END OF HERO SECTION STYLING*/
+
 .what-refugee-container{
     display: flex;
     flex-direction: row;
@@ -166,25 +184,14 @@ body {
     align-items: start;
     padding: 20px 30px;
 }
-.what-refugee-icons{
-    height:400px;
-    margin: 30px 0px;
-    border-radius: 20px;
-    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
-}
-.hero-button:hover{
-    scale: 1.05;
-    text-decoration: none;
-    color: #333;
-    background-color: lightblue;
-    border-radius: 20px;
-}
-/* END OF HERO SECTION STYLING*/
 
 /*HOW MANY REFUGEES SECTION STYLING*/
 .how-many-container{
-    padding: 30px;
-    background-color: #605b56;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
 }
 .big-number{
     margin: 10px;
@@ -202,16 +209,31 @@ body {
     color: black;
     background-color: white;
 }
+.percentage-children{
+    height:200px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+}
 /*END OF HOW MANY REFUGEES SECTION STYLING*/
 
 /*WHO IS A REFUGEE SECTION STYLING*/
-
+.what-refugee-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
+}
 /*END OF WHO IS A REFUGEE SECTION STYLING*/
 
 /*THE PROBLEM SECTION STYLING*/
 .problem-container{
-    padding: 30px;
-    background-color: #b3d89c;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
 }
 /*END OF THE PROBLEM SECTION STYLING*/
 
@@ -223,7 +245,7 @@ body {
     align-items: start;
     margin: 0px;
     padding: 20px 30px;
-    background-color: #9dc3c2;
+    background-color: #77a6b6;
 }
 .needs-pyramid{
     position: sticky;
@@ -237,37 +259,67 @@ body {
 
 /*INTERVIEWS SECTION STYLING*/
 .interviews-container{
-    background-color: #77a6b6;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+    padding: 50px;
 }
 /*END OF INTERVIEWS SECTION STYLING*/
 
 /*SOLUTION SECTION STYLING*/
 .solution-container{
-    background-color: #4b4e6d;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+    padding: 30px 50px;
 }
 /*END OF SOLUTION SECTION STYLING*/
 
 /*HOW IT WORKS SECTION STYLING*/
 .how-it-works-container{
-    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 0px;
+    padding: 30px 50px;
 }
 /*END OF HOW IT WORKS SECTION STYLING*/
 
 /*EXAMPLE SECTION STYLING*/
 .example-container{
-    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+    padding: 30px 50px;
 }
 /*END OF EXAMPLE SECTION STYLING*/
 
 /* DESIGN SECTION STYLING*/
 .design-container{
-    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+    padding: 30px 50px;
 }
 /*END OF DESIGN SECTION STYLING*/
 
 /* DESIGN SECTION STYLING*/
 .about-container{
-    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+    padding: 30px 50px;
 }
 /*END OF DESIGN SECTION STYLING*/
 
@@ -278,7 +330,7 @@ body {
     display: block;
     width:100%;
     height: auto;
-    margin: 20px 0;
+    margin: 0px;
     padding: 0px;
     margin-top: 0px;
     align-items: center;
@@ -322,7 +374,7 @@ body {
     font-family: Alumni_Sans_Pinstripe, Helvetica, sans-serif;
     font-size: 50pt;
     border-radius: 20px;
-    background-color: lightblue;
+    background-color: #77a6b6;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 
 }
@@ -337,7 +389,7 @@ body {
     font-size: 25pt;
     border-radius: 15px;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .quote-container{
@@ -349,7 +401,7 @@ body {
     text-align: center;
     border-radius: 20px;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .quote-text{
@@ -385,14 +437,14 @@ body {
     width: auto;
     height: auto;
     padding: 5px;
-    background-color: lightblue;
-    color: #333;
+    background-color: #77a6b6;
+    color: black;
     text-decoration: none;
     border-radius:7px;
 }
 .normal-text a:hover {
-    background-color: #333;
-    color: lightblue;
+    background-color: black;
+    color: #77a6b6;
 }
 .table {
     align-items: center;
@@ -406,14 +458,14 @@ body {
     width: auto;
     height: auto;
     padding: 5px;
-    background-color: lightblue;
-    color: #333;
+    background-color: #77a6b6;
+    color: black;
     text-decoration: none;
     border-radius:7px;  
 }
 .table a:hover {
-    background-color: #333;
-    color: lightblue;
+    background-color: black;
+    color: #77a6b6;
 }
 .th {
     padding: 10px; 
@@ -453,8 +505,8 @@ body {
     height: auto;
     margin: 10px;
     padding: 10px 30px;
-    background-color: lightblue;
-    color: #333;
+    background-color: #77a6b6;
+    color: black;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.25);
     text-decoration: none;
     font-size: 15px;
@@ -464,7 +516,7 @@ body {
 .button-container a:hover {
     scale: 1.05;
     background-color: #333;
-    color: lightblue;
+    color: #77a6b6;
 }
 /* End Of General Page Content */
 
@@ -496,7 +548,7 @@ body {
     height:auto;
     margin: 30px 30px;
     padding: 15px;
-    background-color: lightblue;
+    background-color: #77a6b6;
     border-radius: 20px;
 
 }
@@ -530,7 +582,7 @@ body {
     padding: 5px;
     height: auto;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
 }
 .voltage-container{
     display: block;
@@ -559,13 +611,13 @@ body {
     border: none;
     border-radius: 0;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
     border-radius: 5px;
     
 }
 .dropdown::placeholder{
     color: white;
-    background-color: #333;
+    background-color: #605b56;
     font-size: 10pt;
 }
 .module-menue-container{
@@ -583,7 +635,7 @@ body {
     align-items: center;
     gap: 10px;
     margin: 0px 0px 0px 0px; /* Move below the modules list */
-    background-color: #333;
+    background-color: #605b56;
     border-radius: 5px;
     padding: 0px 0px;
 }
@@ -591,10 +643,10 @@ body {
     display: none;
     position: static;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
     height:120px;
     overflow-y: scroll;
-    box-shadow: 0px 8px 16px #333;
+    box-shadow: 0px 8px 16px #605b56;
     z-index: 1;
     bottom: 100%;
 }
@@ -608,8 +660,8 @@ body {
     cursor: pointer;
 }
 .dropdown-content div:hover {
-    color: lightblue;
-    background-color: #333;
+    color: #77a6b6;
+    background-color: #605b56;
 }
 .show {
     display: block;
@@ -618,10 +670,10 @@ body {
     width: 8px;
 }
 .dropdown-content::-webkit-scrollbar-track {
-    background: #333;
+    background: #605b56;
 }
 .dropdown-content::-webkit-scrollbar-thumb {
-    background: #333;
+    background: #605b56;
     border-radius: 0;
 }
 .subtotal-container{
@@ -638,7 +690,7 @@ body {
     margin: auto 0;
     font-size: 10pt;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
 }
 .item-list{
     display: block;
@@ -654,7 +706,7 @@ body {
     margin: 10px 0px;
     width: auto;
     height: auto;
-    border: 2px solid #333;
+    border: 2px solid #605b56;
     border-radius: 10px;
 }
 /* Styling for the item row */
@@ -676,7 +728,7 @@ body {
     font-family: inherit;
     font-size: 10pt;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
     border: none;
     border-radius: 5px;
 }
@@ -701,7 +753,7 @@ body {
     margin: 0px 0px 0px 0px;
     padding: 15px;
     color: white;
-    background-color: #333;
+    background-color: #605b56;
     border-radius: 10px;
 }
 .compatibility-warning {
@@ -739,8 +791,8 @@ body {
     text-align: center;
     margin: 10px;
     padding: 10px;
-    background-color: lightblue;
-    color: #333;
+    background-color: #77a6b6;
+    color: #605b56;
     text-decoration: none;
     font-size: 15px;
     border-radius: 10px;
@@ -749,8 +801,8 @@ body {
 }
 .module-info-links a:hover{
     scale: 1.05;
-    background-color: #333;
-    color: lightblue;
+    background-color: #605b56;
+    color: #77a6b6;
 }
 /* End Of Module Library Content */
 
@@ -820,7 +872,7 @@ body {
     font-size: 8pt;
 }
 .footer-info-right a:hover{
-    color: lightblue;
+    color: #77a6b6;
     text-decoration: none;
     font-size: 8pt;
 }
@@ -944,7 +996,7 @@ body {
     width: max-content;
     height: auto;
     padding: 5px;
-    color: #333;
+    color: #605b56;
     text-decoration: none;
     border-radius:7px;  
 }
@@ -953,8 +1005,8 @@ body {
     height: auto;
     margin: 10px;
     padding: 10px 30px;
-    background-color: lightblue;
-    color: #333;
+    background-color: #77a6b6;
+    color: #605b56;
     text-decoration: none;
     font-size: 15px;
     border-radius:10px;
@@ -963,8 +1015,8 @@ body {
 }
 .module-inclusion-usage a:hover {
     scale: 1.05;
-    background-color: #333;
-    color: lightblue;
+    background-color: #605b56;
+    color: #77a6b6;
 }
 
 
