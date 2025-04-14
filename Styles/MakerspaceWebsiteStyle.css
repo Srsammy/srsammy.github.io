@@ -184,7 +184,7 @@ body {
 /*HOW MANY REFUGEES SECTION STYLING*/
 .how-many-container{
     padding: 30px;
-    background-color: lightcoral;
+    background-color: #605b56;
 }
 .big-number{
     margin: 10px;
@@ -192,6 +192,15 @@ body {
     font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;
     font-size: 50pt;
     font-weight: bold;
+}
+.sub-text{
+    width: auto;
+    margin: 20px 0px;
+    padding: 10px;
+    font-size: 12pt;
+    text-align: left;
+    color: black;
+    background-color: white;
 }
 /*END OF HOW MANY REFUGEES SECTION STYLING*/
 
@@ -202,13 +211,9 @@ body {
 /*THE PROBLEM SECTION STYLING*/
 .problem-container{
     padding: 30px;
-    background-color: lightblue;
+    background-color: #b3d89c;
 }
 /*END OF THE PROBLEM SECTION STYLING*/
-
-/*WHO IS A REFUGEE SECTION STYLING*/
-
-/*END OF WHO IS A REFUGEE SECTION STYLING*/
 
 /*NEEDS SECTION STYLING*/
 .needs-container{
@@ -218,7 +223,7 @@ body {
     align-items: start;
     margin: 0px;
     padding: 20px 30px;
-    background-color: white;
+    background-color: #9dc3c2;
 }
 .needs-pyramid{
     position: sticky;
@@ -229,6 +234,42 @@ body {
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 /*END OF NEEDS SECTION STYLING*/
+
+/*INTERVIEWS SECTION STYLING*/
+.interviews-container{
+    background-color: #77a6b6;
+}
+/*END OF INTERVIEWS SECTION STYLING*/
+
+/*SOLUTION SECTION STYLING*/
+.solution-container{
+    background-color: #4b4e6d;
+}
+/*END OF SOLUTION SECTION STYLING*/
+
+/*HOW IT WORKS SECTION STYLING*/
+.how-it-works-container{
+    background-color: lightblue;
+}
+/*END OF HOW IT WORKS SECTION STYLING*/
+
+/*EXAMPLE SECTION STYLING*/
+.example-container{
+    background-color: white;
+}
+/*END OF EXAMPLE SECTION STYLING*/
+
+/* DESIGN SECTION STYLING*/
+.design-container{
+    background-color: lightblue;
+}
+/*END OF DESIGN SECTION STYLING*/
+
+/* DESIGN SECTION STYLING*/
+.about-container{
+    background-color: lightcoral;
+}
+/*END OF DESIGN SECTION STYLING*/
 
 /*BEGINNING OF CONTENT STYLING*/
 /* General Page Content */
