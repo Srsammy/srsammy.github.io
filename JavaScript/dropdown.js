@@ -1,8 +1,10 @@
 const dropdownContent = document.getElementById('dropdown-content');
 
 function clearDropdown() {
-    document.getElementById('module-search').value = ''; // Clear existing options
+    document.getElementById('module-search').value = ''; // Clear search input
+    dropdownContent.innerHTML = ''; // Clear existing options
     selectModule(null);
+    populateDropdown()
 }
 
 function populateDropdown() {
