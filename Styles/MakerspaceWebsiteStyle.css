@@ -475,7 +475,8 @@ body {
     background-color: #77a6b6;
     color: black;
     text-decoration: none;
-    border-radius:7px;  
+    border-radius:7px; 
+    transition: 200ms; 
 }
 .table a:hover {
     background-color: #333;
