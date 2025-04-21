@@ -288,7 +288,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     margin: 0px;
     padding: 30px 50px;
 }
