@@ -310,7 +310,7 @@ body {
 .design-container{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     margin: 0px;
     padding: 30px 50px;
@@ -321,7 +321,7 @@ body {
 .about-container{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     margin: 0px;
     padding: 30px 50px;
