@@ -107,7 +107,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-wrap: wrap;
 }
 .hero-row{
     display: flex;
@@ -117,7 +116,6 @@ body {
     height:fit-content;
     margin: 0px;
     padding: 0px;
-    flex-wrap: wrap;
 }
 .hero-title{
     width: fit-content;
@@ -189,7 +187,6 @@ body {
     justify-content: start;
     align-items: start;
     padding: 20px 30px;
-    flex-wrap: wrap;
 }
 
 /*HOW MANY REFUGEES SECTION STYLING*/
@@ -199,7 +196,6 @@ body {
     justify-content: start;
     align-items: center;
     padding: 50px;
-    flex-wrap: wrap;
 }
 .big-number{
     margin: 10px;
@@ -233,7 +229,6 @@ body {
     justify-content: start;
     align-items: center;
     padding: 50px;
-    flex-wrap: wrap;
 }
 /*END OF WHO IS A REFUGEE SECTION STYLING*/
 
@@ -244,7 +239,6 @@ body {
     justify-content: start;
     align-items: center;
     padding: 50px;
-    flex-wrap: wrap;
 }
 /*END OF THE PROBLEM SECTION STYLING*/
 
@@ -257,7 +251,6 @@ body {
     margin: 0px;
     padding: 20px 30px;
     background-color: #77a6b6;
-    flex-wrap: wrap;
 }
 .needs-pyramid{
     position: sticky;
@@ -277,7 +270,6 @@ body {
     align-items: center;
     margin: 0px;
     padding: 50px;
-    flex-wrap: wrap;
 }
 /*END OF INTERVIEWS SECTION STYLING*/
 
@@ -289,7 +281,6 @@ body {
     align-items: center;
     margin: 0px;
     padding: 30px 50px;
-    flex-wrap: wrap;
 }
 /*END OF SOLUTION SECTION STYLING*/
 
@@ -301,7 +292,6 @@ body {
     align-items: center;
     margin: 0px;
     padding: 30px 50px;
-    flex-wrap: wrap;
 }
 /*END OF HOW IT WORKS SECTION STYLING*/
 
@@ -313,7 +303,6 @@ body {
     align-items: center;
     margin: 0px;
     padding: 30px 50px;
-    flex-wrap: wrap;
 }
 /*END OF EXAMPLE SECTION STYLING*/
 
@@ -325,7 +314,6 @@ body {
     align-items: center;
     margin: 0px;
     padding: 30px 50px;
-    flex-wrap: wrap;
 }
 /*END OF DESIGN SECTION STYLING*/
 
@@ -337,7 +325,7 @@ body {
     align-items: center;
     margin: 0px;
     padding: 30px 50px;
-    flex-wrap: wrap;
+    
 }
 /*END OF DESIGN SECTION STYLING*/
 
