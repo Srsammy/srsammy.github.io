@@ -90,7 +90,7 @@ body {
 }
 .nav-item a:hover {
     color: black;
-    background-color: #605b56;
+    background-color: #77a6b6;
 }
 /*END OF NAVBAR STYLING*/
 
@@ -101,9 +101,9 @@ body {
     width:auto;
     height: auto;
     margin: 0px;
-    padding: 75px 30px;
+    padding: 150px 30px;
     font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;
-    background-image: url(/Images/Prototype_lab.jpg);
+    background-image: url(/Images/Background\ 4.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,7 +126,7 @@ body {
     font-weight: bolder;
     border-radius: 30px;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .hero-CTA{
@@ -148,11 +148,15 @@ body {
 }
 .hero-centered-text{
     color: black;
-    font-size: 25pt;
+    background-color: #77a6b6;
+    font-size: 30pt;
     font-weight: bold;
     background-color: none;
     text-align: center;
     margin: 10px auto;
+    padding: 30px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+    border-radius: 20px;
 }
 .hero-button{
     width: max-content;
@@ -163,7 +167,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: white;
-    background-color:  #605b56;
+    background-color:  #333;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
     border-radius: 20px;
     transition: 750ms;
@@ -211,7 +215,7 @@ body {
 }
 .percentage-children{
     height:200px;
-    margin: 30px auto;
+    margin: 30px 30px;
     border-radius: 20px;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
@@ -251,7 +255,7 @@ body {
     position: sticky;
     top: 50px;
     height:400px;
-    margin: 30px 0px;
+    margin: 30px 30px;
     border-radius: 20px;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
@@ -284,7 +288,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     margin: 0px;
     padding: 30px 50px;
 }
@@ -336,6 +340,12 @@ body {
     align-items: center;
     
 }
+.image{
+    height:200px;
+    margin: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+}
 .tile-subtitle{
     font-family: Alumni_Sans_Pinstripe, Helvetica, Sans-serif;;
     font-size:40pt;
@@ -349,11 +359,19 @@ body {
     align-items: start;
     width: fit-content;
     height: auto;
-    margin: 0px 30px;
+    margin: 0px;
+    padding: 0px;
+}
+.tile-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 30px 30px;
     padding: 0px;
 }
 .text-tile{
-    margin: 30px 0px;
+    margin: 30px 30px;
     padding: 10px 20px;
     border-radius: 20px;
     background-color: white;
@@ -389,7 +407,7 @@ body {
     font-size: 25pt;
     border-radius: 15px;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .quote-container{
@@ -401,7 +419,7 @@ body {
     text-align: center;
     border-radius: 20px;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
 }
 .quote-text{
@@ -461,10 +479,11 @@ body {
     background-color: #77a6b6;
     color: black;
     text-decoration: none;
-    border-radius:7px;  
+    border-radius:7px; 
+    transition: 200ms; 
 }
 .table a:hover {
-    background-color: black;
+    background-color: #333;
     color: #77a6b6;
 }
 .th {
@@ -582,7 +601,7 @@ body {
     padding: 5px;
     height: auto;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
 }
 .voltage-container{
     display: block;
@@ -611,13 +630,12 @@ body {
     border: none;
     border-radius: 0;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     border-radius: 5px;
-    
 }
 .dropdown::placeholder{
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     font-size: 10pt;
 }
 .module-menue-container{
@@ -635,7 +653,7 @@ body {
     align-items: center;
     gap: 10px;
     margin: 0px 0px 0px 0px; /* Move below the modules list */
-    background-color: #605b56;
+    background-color: #333;
     border-radius: 5px;
     padding: 0px 0px;
 }
@@ -643,10 +661,10 @@ body {
     display: none;
     position: static;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     height:120px;
     overflow-y: scroll;
-    box-shadow: 0px 8px 16px #605b56;
+    box-shadow: 0px 8px 16px #333;
     z-index: 1;
     bottom: 100%;
 }
@@ -660,20 +678,24 @@ body {
     cursor: pointer;
 }
 .dropdown-content div:hover {
-    color: #77a6b6;
-    background-color: #605b56;
+    color: black;
+    background-color: #77a6b6;
+    border-radius: 7px;
 }
 .show {
     display: block;
+}
+.show div{
+    transition: 200ms;
 }
 .dropdown-content::-webkit-scrollbar {
     width: 8px;
 }
 .dropdown-content::-webkit-scrollbar-track {
-    background: #605b56;
+    background: #333;
 }
 .dropdown-content::-webkit-scrollbar-thumb {
-    background: #605b56;
+    background: #333;
     border-radius: 0;
 }
 .subtotal-container{
@@ -690,7 +712,7 @@ body {
     margin: auto 0;
     font-size: 10pt;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
 }
 .item-list{
     display: block;
@@ -706,7 +728,7 @@ body {
     margin: 10px 0px;
     width: auto;
     height: auto;
-    border: 2px solid #605b56;
+    border: 2px solid #333;
     border-radius: 10px;
 }
 /* Styling for the item row */
@@ -728,7 +750,7 @@ body {
     font-family: inherit;
     font-size: 10pt;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     border: none;
     border-radius: 5px;
 }
@@ -753,7 +775,7 @@ body {
     margin: 0px 0px 0px 0px;
     padding: 15px;
     color: white;
-    background-color: #605b56;
+    background-color: #333;
     border-radius: 10px;
 }
 .compatibility-warning {
@@ -792,7 +814,7 @@ body {
     margin: 10px;
     padding: 10px;
     background-color: #77a6b6;
-    color: #605b56;
+    color: black;
     text-decoration: none;
     font-size: 15px;
     border-radius: 10px;
@@ -801,7 +823,7 @@ body {
 }
 .module-info-links a:hover{
     scale: 1.05;
-    background-color: #605b56;
+    background-color: #333;
     color: #77a6b6;
 }
 /* End Of Module Library Content */
@@ -818,6 +840,7 @@ body {
 .icon-container img{
     height:100px;
     border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.25);
 }
 /*End Of Module Page Content*/
 /*END OF CONTENT STYLING*/
@@ -984,21 +1007,17 @@ body {
     box-shadow: 0px 3px 5px rgba(0,0,0,0.25);
 }
 .module-inclusion-details {
-    width: 30%;
-    padding-left: 200px;
+    width: fit-content;
+    margin: 30px auto;
 }
 .module-inclusion-name {
     font-size: 24px;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .module-inclusion-usage {
-    width: max-content;
-    height: auto;
-    padding: 5px;
-    color: #605b56;
-    text-decoration: none;
-    border-radius:7px;  
+    display: block; 
+    height: fit-content;
 }
 .module-inclusion-usage a {
     width: auto;
@@ -1006,7 +1025,7 @@ body {
     margin: 10px;
     padding: 10px 30px;
     background-color: #77a6b6;
-    color: #605b56;
+    color: black;
     text-decoration: none;
     font-size: 15px;
     border-radius:10px;
@@ -1015,7 +1034,7 @@ body {
 }
 .module-inclusion-usage a:hover {
     scale: 1.05;
-    background-color: #605b56;
+    background-color: #333;
     color: #77a6b6;
 }
 
